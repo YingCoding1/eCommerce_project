@@ -1,0 +1,24 @@
+.Stripe {
+  margin: auto;
+}
+.Stripe_Logo {
+  max-width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.Stripe_Logo_Image {
+  margin: auto;
+}
+.Stripe_Heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 40px;
+}
+
+/*# sourceMappingURL=Stripe.css.map */

@@ -1,0 +1,200 @@
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin FlexRowSpaceBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin ExitButton {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+@mixin ItemDetail {
+  width: 254px;
+  height: 21.17px;
+}
+
+$Width: 335px;
+$luluRed: rgb(211, 19, 52);
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+.body {
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  cursor: pointer
+}
+
+.Bridge {
+  width: 90px;
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  right: -42.5px;
+  top: 10px;
+  z-index: 10;
+}
+
+.CheckoutItemInBag {
+  @include FlexColumn;
+  width: 375px;
+  background-color: rgb(252, 252, 252);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px 0px;
+  position: absolute;
+  right: -45px;
+  top: 30px;
+  cursor: default;
+
+  &_Title {
+    width: $Width;
+    height: 28px;
+    padding: 16px 20px 12px 20px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    @include FlexRowSpaceBetween;
+
+    p {
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    img {
+      @include ExitButton;
+      padding-bottom: 8px;
+    }
+  }
+
+  &_Items {
+    width: $Width;
+    padding: 16px 20px 24px 20px;
+    border-bottom: 1px solid rgb(213, 213, 213);
+    display: grid;
+    grid-row-gap: 24px;
+
+    &_Product {
+      @include FlexRow;
+
+      &_Left {
+        img {
+          width: 71px;
+          height: 85.2px;
+          border-radius: 4px;
+        }
+      }
+
+      &_Right {
+        @include FlexColumn;
+        padding-left: 10px;
+        width: 254px;
+        line-height: 20px;
+        font-size: 14.5px;
+        letter-spacing: .3px;
+
+        &_Name {
+          @include FlexRowSpaceBetween;
+          font-weight: 500;
+          width: 254px;
+          align-items: flex-start;
+        }
+
+        &_Color {
+          @include ItemDetail;
+        }
+
+        &_Size {
+          @include ItemDetail;
+        }
+
+        &_QuantityAndPrice {
+          @include ItemDetail;
+          @include FlexRowSpaceBetween;
+        }
+      }
+    }
+  }
+
+  &_Costs {
+    @include FlexColumn;
+    width: $Width;
+    padding: 16px 20px 32px 20px;
+
+    h3 {
+      line-height: 22px;
+      font-weight: 500;
+      font-size: 17px;
+    }
+
+    &_SubTotal {
+      margin-bottom: 4px;
+      @include FlexRowSpaceBetween;
+
+      &_Left {
+        @include FlexRow;
+
+        h3 {
+          margin-right: 4px;
+        }
+
+        p {
+          line-height: 22px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    &_Shipping {
+      margin-bottom: 4px;
+      @include FlexRowSpaceBetween;
+    }
+
+    &_Container {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      height: fit-content;
+      cursor: pointer;
+
+      &_Button {
+        text-align: center;
+        position: unset !important;
+        padding: 16px !important;
+        background-color: $luluRed;
+        border: 1px solid $luluRed;
+        border-radius: 4px;
+        width: $Width;
+
+        h2 {
+          margin: 0;
+          color: white;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: 1.2px;
+        }
+
+        &:hover {
+          background-color: #B81C29;
+        }
+      }
+    }
+  }
+}

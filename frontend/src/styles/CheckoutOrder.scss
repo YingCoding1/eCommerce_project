@@ -1,0 +1,272 @@
+.OrderPage-Header {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  span {
+    text-decoration: underline;
+  }
+
+  #OrderPage-Header-CloseImg {
+    //margin-left: 200px;
+    //right: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    float: right;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #OrderPage-Header-CloseImg:after {
+    width: 100%;
+    position: absolute;
+    height: 1.5px;
+    background: black;
+    content: "";
+    top: 9px;
+    left: 0;
+    transform: rotate(134deg);
+    -ms-transform: rotate(134deg);
+    -moz-transform: rotate(134deg);
+    -webkit-transform: rotate(134deg);
+    -o-transform: rotate(134deg);
+  }
+
+  #OrderPage-Header-CloseImg:before {
+    width: 100%;
+    position: absolute;
+    height: 1.5px;
+    background: black;
+    content: "";
+    top: 9px;
+    right: 0;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+}
+
+.OrderSummary {
+  margin-left: 50px;
+  background-color: #fafafa;
+  width: 350px;
+  height: 600px;
+
+  h2 {
+    margin-left: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.OrderSummary-Details {
+  width: 350px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //text-decoration: underline;
+  hr {
+    width: 340px;
+    border: 0.02px solid lightgray;
+  }
+}
+
+.OrderSummary-Details-Subtotal,
+.OrderSummary-Details-Shipping,
+.OrderSummary-Details-Tax,
+.OrderSummary-Details-Total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.OrderSummary-Details-Total {
+  font-weight: 600;
+}
+
+#AfterPay {
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+.AfterPay_Logo {
+  width: 80px;
+  padding-left: 5px;
+}
+
+.AfterPay_iIcon {
+  width: 30px;
+}
+
+.OrderSummary-Btn {
+  margin-top: 30px;
+}
+
+.OrderSummary-Btn-Red {
+  background-color: #d31334;
+  border: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  line-height: 20px;
+  width: 350px;
+  height: 44px;
+  //min-width: 0px;
+  overflow: hidden;
+  position: center;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.OrderSummary-Btn-Red:hover,
+.OrderSummary-Btn-Red:focus {
+  background-color: #d31334;
+  color: #ffffff;
+}
+
+.OrderSummary-Btn-Red:active {
+  background: #d31334;
+  color: rgb(255, 255, 255, .7);
+}
+
+.OrderSummary-Btn-Red:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+.OrderSummary-Btn-Text {
+  text-align: center;
+  margin: 15px 0px 15px 0px;
+}
+
+.OrderSummary-ShipTo {
+  margin-top: 20px;
+  font-size: 18px;
+
+  span {
+    text-decoration: underline;
+  }
+}
+
+.paypal_expired {
+  background-color: #009cde;
+  height: 45px;
+  width: 350px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  &_Logo {
+    width: 16px;
+  }
+
+  &_Text {
+    width: 66px;
+
+  }
+}
+
+.LoginModalForm {
+  width: 430px;
+  height: 230px;
+  background-color: #ffffff;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+
+
+  &_Close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  &_Text {
+    font-size: 23px;
+    font-weight: 600;
+    width: 370px;
+    margin: 40px 20px 15px;
+
+  }
+
+  &_Button {
+    background-color: #d22030;
+    color: #ffffff;
+    width: 380px;
+    margin: 15px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #921217;
+    }
+
+  }
+}
+
+
+//changebyeason
+@media only screen and (max-width: 390px) {
+  .OrderSummary {
+    width: 390px;
+    margin: 0 auto;
+    height: 380px;
+    h2 {
+      display: none;
+    }
+  }
+
+  .OrderSummary-Details {
+    margin: auto;
+    font-size: 14px;
+  }
+
+  #AfterPay {
+    font-size: 14px;
+
+  }
+  .AfterPay_Logo {
+    width: 60px;
+    padding-left: 5px;
+  }
+
+  .AfterPay_iIcon {
+    width: 20px;
+  }
+
+  .OrderSummary-ShipTo {
+    display: none;
+  }
+
+}

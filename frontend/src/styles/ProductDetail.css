@@ -1,0 +1,35 @@
+.ProductDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ProductDetail_Main {
+  display: flex;
+  flex-direction: row;
+  margin: 124px auto 50px;
+  width: 1200px;
+}
+.ProductDetail_Main_ContainerStyle {
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.ProductDetail_MainCarousel_Responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .ProductDetail_Main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 390px;
+  }
+  .ProductDetail_MainCarousel {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ProductDetail.css.map */

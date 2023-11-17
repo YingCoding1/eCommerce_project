@@ -1,0 +1,46 @@
+//@import "~bootstrap/scss/bootstrap";
+.my-modal{
+  width:90vw;
+  max-width:90vw;
+  .ProductDetail{
+    .ProductDetail_Main_ContainerStylesRight{
+      display: flex;
+      flex-direction: column;
+      .ProductDetail_Main_ContainerStylesRightTwo{
+        //position: absolute;
+        //right: 20px;
+        float: right;
+        padding: 20px;
+        margin: 20px;
+      }
+    }
+
+  }
+}
+.Test_List {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  gap: 50px;
+
+  &_Total {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 50px;
+  }
+
+  &_Card {
+    display: flex;
+    flex-direction: row;
+
+    &_Info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-left: 40px;
+      width: 600px;
+    }
+  }
+}

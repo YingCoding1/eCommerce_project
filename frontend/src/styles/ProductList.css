@@ -1,0 +1,76 @@
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 250px;
+  width: 900px;
+}
+.ProductList_Loading {
+  font-size: 900px;
+  margin-top: 150px;
+}
+.ProductList_ListCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ProductList_ViewMore {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 70px 0;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  padding: 10px 0;
+}
+.ProductList_ViewMore_DisplayNum {
+  margin-top: 20px;
+}
+.ProductList_ViewMore_DisplayNum_Loading {
+  width: 120px;
+}
+.ProductList_ViewMore_Content {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.ProductList_ViewMore_Content_AddBtn {
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.ProductList_ViewMore_Content_AddIcon {
+  color: red;
+}
+
+@media only screen and (max-width: 390px) {
+  .ProductList {
+    margin: 0;
+    padding: 0;
+    justify-content: normal;
+    width: 390px;
+  }
+  .ProductList_ListCards {
+    justify-content: space-between;
+    margin: 20px 0 240px;
+  }
+  .ProductList_ViewMore {
+    margin-bottom: 140px;
+  }
+}
+
+/*# sourceMappingURL=ProductList.css.map */

@@ -1,0 +1,139 @@
+.billing {
+  &_body {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+
+    &_left {
+      width: 60%;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      button {
+        float: right;
+        text-align: right;
+        background: #d31334;
+        width: 180.4px;
+        height: 53px;
+        padding: 16px;
+        color: #FFFFFF;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      &_address {
+        background-color: #fafafa;
+        padding: 10px;
+        margin-top: 10px;
+
+        h4 {
+          font-size: 18px;
+          font-weight: 200;
+          text-align: left;
+        }
+
+        input {
+          height: 25px;
+        }
+
+        select {
+          height: 35px;
+        }
+
+        &_name {
+          margin: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+        }
+
+        &_phone {
+          input {
+            width: 100%;
+          }
+        }
+
+        &_street {
+          input {
+            width: 100%;
+          }
+        }
+
+        &_map {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          &_city, &_province, &_postcode {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+      &_submit {
+        margin-left: auto;
+        text-align: right;
+        margin-top: 10px;
+
+
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .billing {
+    &_body {
+      width: 390px;
+      display: flex;
+      flex-direction: column;
+
+      &_left {
+        width: 100%;
+        margin: 10px;
+
+        h2 {
+          text-align: center;
+        }
+        button {
+          margin-top: 20px;
+        }
+
+        h4 {
+          height: 10px;
+        }
+
+        &_address {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          &_name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0;
+          }
+          &_map {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      }
+
+      &_right {
+        //display: none;
+      }
+    }
+  }
+  .CheckoutFooter {
+    display: none;
+  }
+}

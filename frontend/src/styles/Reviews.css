@@ -1,0 +1,510 @@
+.Reviews {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Reviews_Heading {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+.Reviews_Heading_Title {
+  font-size: 50px;
+  font-weight: 600;
+  width: 320px;
+}
+.Reviews_Heading_StatusBar {
+  display: flex;
+  justify-content: start;
+}
+.Reviews_Heading_StatusBar p {
+  display: inline-block;
+  border-bottom: 1px gray solid;
+  cursor: pointer;
+}
+.Reviews_Heading_StatusBar p:hover {
+  border-bottom: 1px red solid;
+}
+.Reviews_Heading_ReviewBtn {
+  position: absolute;
+  right: 0;
+}
+.Reviews_Heading_ReviewBtn button {
+  background-color: black;
+  padding: 20px 100px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.Reviews_Heading_ReviewBtn button:hover {
+  opacity: 0.7;
+}
+.Reviews_ReviewBox {
+  display: flex;
+  margin: 100px auto;
+}
+.Reviews_ReviewBox_Form {
+  display: flex;
+  flex-direction: row;
+  height: 600px;
+  margin: auto;
+}
+.Reviews_ReviewBox_Form_Image {
+  width: 500px;
+  height: 600px;
+  margin: 0;
+}
+.Reviews_ReviewBox_Form_Section {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  background: #ffffff;
+}
+.Reviews_ReviewBox_Form_Section_Close {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  cursor: pointer;
+}
+.Reviews_ReviewBox_Form_Section_RDHeading {
+  display: none;
+}
+.Reviews_ReviewBox_Form_Section_Heading {
+  margin: 10px 20px;
+}
+.Reviews_ReviewBox_Form_Section_Heading_Title {
+  font-weight: 600;
+  font-size: 30px;
+}
+.Reviews_ReviewBox_Form_Section_Heading_Name {
+  font-weight: 600;
+  font-size: 20px;
+}
+.Reviews_ReviewBox_Form_Section_ProgressBar {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  border-bottom: 2px gray solid;
+  margin: 0 20px;
+}
+.Reviews_ReviewBox_Form_Section_ProgressBar_Stepper {
+  margin: -2px;
+  padding: 5px 0;
+}
+.Reviews_ReviewBox_Form_Section_ProgressBar_Stepper:hover {
+  cursor: pointer;
+}
+.Reviews_ReviewBox_Form_Section_Rating {
+  margin: 0 20px;
+}
+.Reviews_ReviewBox_Form_Section_Title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.Reviews_ReviewBox_Form_Section_Title input {
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+.Reviews_ReviewBox_Form_Section_Content {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.Reviews_ReviewBox_Form_Section_Guideline {
+  margin: 0 20px;
+}
+.Reviews_ReviewBox_Form_Section_ReviewBtn {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 460px;
+}
+.Reviews_ReviewBox_Form_Section_ReviewBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.Reviews_ReviewBox_Form_Section_Photo {
+  display: flex;
+  flex-direction: column;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content {
+  height: 250px;
+  padding: 0 28px 16px 28px;
+  border-bottom: 2px solid lightgray;
+  font-size: 16px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content_Add {
+  font-weight: 600;
+  margin-bottom: 8px;
+  height: 24px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content_Add_Optional {
+  color: rgb(87, 88, 91);
+  font-weight: 400;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content_Upload {
+  margin-bottom: 4px;
+  height: 20px;
+  color: rgb(87, 88, 91);
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content_CustomerPhoto {
+  margin-top: 16px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Content_CustomerPhoto .CustomerPhoto {
+  border-radius: 4px;
+  width: 111px;
+  height: 111px;
+  margin: 2px 8px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  padding: 0 28px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Upload {
+  border: 1px dashed rgb(87, 88, 91);
+  color: rgb(87, 88, 91);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Upload:hover {
+  cursor: pointer;
+  background-color: rgb(224, 224, 224);
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Submit {
+  font-weight: 600;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
+  background-color: black;
+  border: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+  border-radius: 4px;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Submit:hover {
+  cursor: pointer;
+  background-color: rgb(87, 88, 91);
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Edit {
+  font-size: 14px;
+  line-height: 20px;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+.Reviews_ReviewBox_Form_Section_Photo_Button_Edit:hover {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(211, 19, 52);
+}
+.Reviews_Section {
+  display: flex;
+  flex-direction: row;
+}
+.Reviews_Section_NavBar {
+  width: 280px;
+  margin-right: 30px;
+}
+.Reviews_Section_NavBar_Filter {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.Reviews_Section_NavBar_Search {
+  position: relative;
+  margin-top: 20px;
+}
+.Reviews_Section_NavBar_Search input {
+  height: 30px;
+  padding: 10px 40px;
+  width: 200px;
+}
+.Reviews_Section_NavBar_Search_Icon {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.Reviews_Section_NavBar_FilterAndSort {
+  display: none;
+}
+.Reviews_Section_NavBar_Rating {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background: #ffffff;
+  padding: 10px;
+}
+.Reviews_Section_NavBar_Rating hr {
+  width: 240px;
+  margin-left: -2px;
+}
+.Reviews_Section_Content {
+  display: flex;
+  flex-direction: column;
+  width: 860px;
+}
+.Reviews_Section_Content_Card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  margin: 10px;
+  width: 860px;
+  height: 300px;
+  justify-content: space-around;
+  padding: 10px;
+}
+.Reviews_Section_Content_Card_UserAndTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Reviews_Section_Content_Card_UserAndTime_Avatar {
+  margin: 0 10px;
+}
+.Reviews_Section_Content_Card_UserAndTime_Name {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Reviews_Section_Content_Card_UserAndTime_Date {
+  margin: 0 10px;
+}
+.Reviews_Section_Content_Card_Rating_Star {
+  width: 15px;
+  fill: #000000;
+}
+.Reviews_Section_Content_Card_Title {
+  font-size: 25px;
+  font-weight: 600;
+}
+.Reviews_Section_Content_Card_Body {
+  word-wrap: break-word;
+  min-height: 100px;
+}
+.Reviews_Section_Content_Card_ReviewImage {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+.Reviews_Section_Content_Card_Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Reviews_Section_Content_Card_Footer_Icon {
+  margin: 0 10px;
+}
+.Reviews_Section_Content_Card_Footer_Comment {
+  margin: 0 10px;
+}
+.Reviews_Section_Content_LoadMore_Btn {
+  width: 200px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+.Reviews_Section_Content_LoadMore_Btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 390px) {
+  .MuiModal-root {
+    overflow: hidden !important;
+  }
+  .Reviews {
+    margin: 30px auto;
+    width: 360px;
+  }
+  .Reviews_Heading {
+    flex-direction: column;
+  }
+  .Reviews_Heading_Title {
+    font-size: 30px;
+  }
+  .Reviews_Heading_StatusBar p {
+    font-size: 10px;
+  }
+  .Reviews_Heading_ReviewBtn {
+    position: relative;
+    margin: 50px auto 0;
+    width: 360px;
+  }
+  .Reviews_Section {
+    flex-direction: column;
+  }
+  .Reviews_Section_NavBar_Filter {
+    display: none;
+  }
+  .Reviews_Section_NavBar_Rating {
+    display: none;
+  }
+  .Reviews_Section_NavBar_Search {
+    width: 360px;
+    margin: 30px 0 10px;
+  }
+  .Reviews_Section_NavBar_Search input {
+    width: 274px;
+  }
+  .Reviews_Section_NavBar_FilterAndSort {
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    justify-content: space-between;
+    position: relative;
+  }
+  .Reviews_Section_NavBar_FilterAndSort_Filter {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .Reviews_Section_NavBar_FilterAndSort_Filter button {
+    background: #ffffff;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Reviews_Section_NavBar_FilterAndSort_Sort {
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  .Reviews_Section_NavBar_FilterAndSort_Sort button {
+    background: #ffffff;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Reviews_Section_Content {
+    width: 360px;
+    margin: 0;
+  }
+  .Reviews_Section_Content_Card {
+    width: 340px;
+    margin: 30px 0;
+  }
+  .Reviews_Section_Content_Card_UserAndTime_Avatar {
+    margin: 0 5px;
+  }
+  .Reviews_Section_Content_Card_UserAndTime_Name {
+    margin: 0 5px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .Reviews_Section_Content_Card_UserAndTime_Date {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  .Reviews_Section_Content_Card_Footer_Icon {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  .Reviews_Section_Content_Card_Footer_Comment {
+    margin: 0 5px;
+    font-size: 10px;
+  }
+  .Reviews_ReviewBox {
+    width: 390px;
+    background: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+  }
+  .Reviews_ReviewBox_Form {
+    width: 390px;
+    background: #ffffff;
+    height: 844px;
+  }
+  .Reviews_ReviewBox_Form_Image {
+    display: none;
+  }
+  .Reviews_ReviewBox_Form_Section {
+    width: 390px;
+  }
+  .Reviews_ReviewBox_Form_Section_Close {
+    top: 2%;
+    right: 2%;
+  }
+  .Reviews_ReviewBox_Form_Section_RDHeading {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: auto;
+  }
+  .Reviews_ReviewBox_Form_Section_RDHeading_Title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  .Reviews_ReviewBox_Form_Section_RDHeading_Content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .Reviews_ReviewBox_Form_Section_RDHeading_Content img {
+    max-width: 200px;
+    width: auto;
+  }
+  .Reviews_ReviewBox_Form_Section_RDHeading_Content_Name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  .Reviews_ReviewBox_Form_Section_Heading {
+    display: none;
+  }
+  .Reviews_ReviewBox_Form_Section_ProgressBar {
+    width: 350px;
+    font-size: 15px;
+  }
+  .Reviews_ReviewBox_Form_Section_ProgressBar_Stepper {
+    width: 360px;
+  }
+  .Reviews_ReviewBox_Form_Section_Content_Textarea {
+    width: 345px !important;
+  }
+  .Reviews_ReviewBox_Form_Section_ReviewBtn button {
+    width: 350px;
+  }
+}
+
+/*# sourceMappingURL=Reviews.css.map */

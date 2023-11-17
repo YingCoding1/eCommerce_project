@@ -1,0 +1,201 @@
+.ContentNav {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+.ContentNav_WhatsNew {
+  display: none;
+}
+.ContentNav_Banner {
+  position: relative;
+  margin: 0;
+}
+.ContentNav_Banner img {
+  width: 900px;
+}
+.ContentNav_Banner h2 {
+  position: absolute;
+  color: #ffffff;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+.ContentNav_Heading {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+.ContentNav_Menu {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+  align-items: center;
+}
+.ContentNav_Menu_Select {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.ContentNav_Menu_Select_Item {
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 3px solid red;
+  padding: 20px 0;
+  margin: 0;
+}
+.ContentNav_Menu_Select_Item p {
+  margin: 0;
+  padding: 0;
+}
+.ContentNav_Menu_Select_Available {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  padding: 20px 0;
+  border-bottom: 3px solid white;
+  justify-content: center;
+  align-items: center;
+}
+.ContentNav_Menu_Select_Available:hover {
+  border-bottom: 3px solid red;
+}
+.ContentNav_Menu_Select_Available p {
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+.ContentNav_Menu_Sort {
+  padding-right: 10px;
+  width: 300px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.ContentNav_Menu_Sort_Btn {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.ContentNav_Menu_Sort_Btn p {
+  font-weight: 600;
+  margin-right: 10px;
+}
+.ContentNav_Menu_Sort_Btn p span {
+  font-weight: lighter;
+  margin-left: 10px;
+}
+.ContentNav_Menu_Sort_Btn_Arrow {
+  margin-right: 20px;
+}
+.ContentNav_Menu_Sort_Dropdown {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+.ContentNav_Menu_Sort_Dropdown ul {
+  position: absolute;
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  background-color: #ffffff;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.ContentNav_Menu_Sort_Dropdown ul li {
+  padding: 10px;
+  margin: 0;
+  width: 280px;
+}
+.ContentNav_Menu_Sort_Dropdown ul li:hover {
+  background-color: #f5f5f5;
+}
+.ContentNav_SortFilter {
+  display: none;
+}
+.ContentNav_Filters {
+  display: flex;
+  flex-direction: row;
+}
+.ContentNav_Filters_Box {
+  margin: 0 5px;
+}
+.ContentNav_Filters_Box button {
+  background: #ffffff;
+  margin: 20px 10px 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: thin solid #000000;
+}
+
+.ContentNav_Banner_Women {
+  left: 5%;
+}
+
+.ContentNav_Banner_Men {
+  right: 5%;
+}
+
+@media only screen and (max-width: 390px) {
+  .ContentNav {
+    width: 370px;
+    margin: auto;
+  }
+  .ContentNav_WhatsNew {
+    display: block;
+  }
+  .ContentNav_Banner {
+    display: none;
+  }
+  .ContentNav_Menu_Sort {
+    display: none;
+  }
+  .ContentNav_Menu {
+    display: block;
+    position: relative;
+  }
+  .ContentNav_Menu_Select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .ContentNav_SortFilter {
+    margin: 20px 5px;
+    display: block;
+    position: relative;
+  }
+  .ContentNav_SortFilter button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #696969;
+    border-radius: 3px;
+  }
+  .ContentNav_SortFilter button:hover {
+    background: #202020;
+    color: #D3D3D3;
+    cursor: pointer;
+  }
+  .ContentNav_Heading {
+    font-size: 10px;
+    text-align: center;
+  }
+  .ContentNav_Menu_Select_Available, .ContentNav_Menu_Select_Item {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=ContentNav.css.map */

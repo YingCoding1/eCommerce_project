@@ -1,0 +1,285 @@
+.orderHistory {
+  margin: 10px auto;
+  width: 1200px;
+}
+.orderHistory_MyOrder {
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin-top: 40px;
+}
+.orderHistory_DetailMainContent {
+  border: black solid 1px;
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: inherit;
+}
+.orderHistory_MainContent {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: inherit;
+}
+.orderHistory_MainContent_ProductHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  gap: 20px;
+}
+.orderHistory_MainContent_OrderDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+  margin: 20px;
+  background: lightgray;
+  width: 1060px;
+  height: 100px;
+  flex-wrap: wrap;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+  margin-left: 80px;
+}
+.orderHistory_MainContent_ProductDetail {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  margin: 40px;
+  margin-left: 80px;
+}
+.orderHistory_MainContent_ProductDetail_Products {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.orderHistory_MainContent_ProductDetail_Products_Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: -10px;
+}
+.orderHistory_MainContent_ProductDetail_Products_Top_Images {
+  width: 90px;
+  height: 100px;
+}
+.orderHistory_MainContent_ProductDetail_Products_NameDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.orderHistory_MainContent_ProductDetail_Products_Quantity {
+  display: flex;
+  align-items: center;
+}
+.orderHistory_MainContent_ProductDetail_Products_Price {
+  display: flex;
+  align-items: center;
+}
+.orderHistory_MainContent_ProductDetail_Total {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.orderHistory_MainContent_ProductDetail_Total_ItemTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+}
+.orderHistory_MainContent_ProductDetail_Total_Shipping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+}
+.orderHistory_MainContent_ProductDetail_Total_Taxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+}
+.orderHistory_MainContent_ProductDetail_Total_TotalPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  font-weight: bolder;
+}
+
+.btnContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+.invoiceBtn {
+  width: 200px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;
+}
+
+.orderHistory_Icon {
+  display: flex;
+  justify-content: center;
+  margin-left: 110px;
+  width: 1200px;
+}
+
+.hr1 {
+  width: 1050px;
+  color: black;
+  margin-left: -10px;
+}
+
+.Free {
+  color: red;
+}
+
+@media only screen and (max-width: 390px) {
+  .orderHistory {
+    width: 380px;
+    margin: 0;
+  }
+  .orderHistory_Icon {
+    width: 350px;
+    margin: 30px;
+  }
+  .orderHistory_MyOrder {
+    width: 350px;
+    margin: 20px;
+  }
+  .orderHistory_MainContent {
+    width: 370px;
+    margin-left: 3px;
+  }
+  .orderHistory_MainContent_OrderDetail {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 150px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+  .orderHistory_MainContent_OrderDetail_OrderNumber {
+    margin-left: 10px;
+  }
+  .orderHistory_MainContent_OrderDetail_OrderDate {
+    margin-left: 10px;
+  }
+  .orderHistory_MainContent_OrderDetail_Status {
+    margin-left: 10px;
+  }
+  .orderHistory_MainContent_ProductHistory {
+    width: 350px;
+    margin: 30px;
+  }
+  .orderHistory_MainContent_ProductDetail {
+    width: 375px;
+    margin: 30px 0 30px 6px;
+  }
+  .orderHistory_MainContent_ProductDetail_Products_Top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 370px;
+  }
+  .orderHistory_MainContent_ProductDetail_Products_Top_Images {
+    width: 100px;
+    height: 120px;
+  }
+  .orderHistory_MainContent_ProductDetail_Products_NameDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 112px;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .orderHistory_MainContent_ProductDetail_Products_Quantity {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    height: 112px;
+  }
+  .orderHistory_MainContent_ProductDetail_Products_Price {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    height: 112px;
+  }
+  .orderHistory_MainContent_ProductDetail_Total {
+    width: 370px;
+  }
+  .orderHistory_MainContent_ProductDetail_Total_ItemTotal {
+    width: 340px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .orderHistory_MainContent_ProductDetail_Total_Shipping {
+    width: 340px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .orderHistory_MainContent_ProductDetail_Total_Taxes {
+    width: 340px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .orderHistory_MainContent_ProductDetail_Total_TotalPrice {
+    margin-left: 10px;
+    width: 340px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .orderHistory_MainContent_ProductDetail_Total_OrderNumber {
+    margin-left: 10px;
+    width: 340px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .orderHistory_DetailMainContent {
+    width: 370px;
+    margin: 20px 0 20px 6px;
+  }
+  .btnContainer {
+    width: 370px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .hr1 {
+    width: 345px;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=OrderHistory.css.map */

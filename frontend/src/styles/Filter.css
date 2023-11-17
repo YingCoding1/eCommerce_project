@@ -1,0 +1,11 @@
+.Filter {
+  margin-top: 124px;
+}
+
+@media only screen and (max-width: 390px) {
+  .Filter {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Filter.css.map */

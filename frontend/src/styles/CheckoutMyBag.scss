@@ -1,0 +1,131 @@
+.checkoutMyBag {
+  &_Container {
+    //margin: 0 25px;
+    background: #fafafa;
+
+    &_MyBags {
+      margin-left: 25px;
+      font-size: 20px;
+      font-weight: bolder;
+    }
+  }
+}
+
+//changebyEason
+.OrderSummary_Btn_Responsive_Red_Responsive {
+  display: none;
+}
+
+.OrderSummary_ShipTo_Responsive_ShipLocation {
+  display: none;
+
+  &_Red_Responsive {
+    display: none;
+  }
+}
+
+.checkoutMyBag_Container_MyBagsResponsive {
+  display: none;
+}
+
+.checkoutMyBag_Container_TotalPrice {
+  display: none;
+}
+
+//changebyEason
+@media only screen and (max-width: 390px) {
+  .checkoutMyBag_Container_SummaryTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 360px;
+  }
+  .checkoutMyBag {
+    &_Container {
+      &_MyBags {
+        display: none;
+      }
+    }
+  }
+  .checkoutMyBag_Container {
+    width: 390px;
+    //transform: translate(50px, 10px);
+    //changebyEason
+    &_TotalPrice {
+      font-size: 26px;
+      font-weight: 500;
+      font-family: Calibre, Verlag, Helvetica, sans-serif;
+      display: block;
+    }
+
+    &_MyBagsResponsive {
+      font-size: 24px;
+      font-weight: bolder;
+      width: 320px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  //changebyEason
+  .OrderSummary {
+    width: 390px;
+    margin: 0;
+    //transform: translate(46px, 0px);
+
+    &_Btn_Responsive {
+      &_Red_Responsive {
+        background: #d31334;
+        width: 350px;
+        height: 53px;
+        padding: 16px;
+        color: #FFFFFF;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &_ShipTo_Responsive {
+      &_ShipLocation {
+        font-size: 12px;
+        margin-bottom: 12px;
+        margin-left: 10px;
+        border: lightgray solid 1px;
+        width: 350px;
+        height: 52px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: flex-start;
+
+        &_Icon {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      h1 {
+        font-size: 12px;
+        border-bottom: black solid 1px;
+        transform: translate(41px, -23px);
+        font-weight: 400;
+      }
+
+      &_ArriveTime {
+        transform: translate(-86px, -6px);
+      }
+    }
+  }
+}
+

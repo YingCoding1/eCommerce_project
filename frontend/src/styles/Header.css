@@ -1,0 +1,581 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  justify-content: center;
+  align-self: center;
+}
+.Header .CeilingWrap {
+  display: flex;
+  justify-content: center;
+}
+.Header .CeilingWrap .Ceiling {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 36px;
+  width: 100%;
+  background-color: #F5F5F5;
+  padding: 0 34px;
+  align-items: center;
+  max-width: 1250px;
+}
+.Header .CeilingWrap .Ceiling .Item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 16px;
+  height: 36px;
+  cursor: pointer;
+}
+.Header .CeilingWrap .Ceiling .Item .Icon {
+  padding: 2px 8px 0 8px;
+}
+.Header .CeilingWrap .Ceiling .Item .Button {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 33px;
+}
+.Header .CeilingWrap .Ceiling .Item .Button:after {
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .CeilingWrap .Ceiling .Item .Button:hover::after {
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .CeilingWrap .Ceiling .Item .Button_Logout {
+  position: absolute;
+  top: 30%;
+  background-color: #f5f5f5;
+  padding: 3px 30px;
+  border-radius: 5px;
+}
+.Header .CeilingWrap .Ceiling .Item #OrderHistoryIcon {
+  height: 20px;
+}
+.Header .NavBarWrap {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.Header .NavBarWrap .NavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1250px;
+  align-items: center;
+  padding: 18px 34px;
+}
+.Header .NavBarWrap .NavBar .Left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 50%;
+}
+.Header .NavBarWrap .NavBar .Left .Logo {
+  margin-right: 36px;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .Button {
+  padding: 4px 12px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  line-height: 34px;
+  min-width: fit-content;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .Button:after {
+  height: 4px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .Button:hover::after {
+  height: 4px;
+  width: 30px;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s opacity ease-in-out;
+  padding: 35px 0;
+  margin: 0 auto;
+  background-color: white;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+.Header .NavBarWrap .NavBar .Left .dropdown:hover > .dropdownMenu {
+  display: flex;
+  z-index: 3;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  padding-bottom: 30px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Left {
+  display: flex;
+  flex-direction: column;
+  padding-right: 14px;
+  margin: 10px 0 0 45px;
+  min-width: 145px;
+  max-width: 225px;
+  width: 100%;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Left .dropdown_Items {
+  margin-bottom: 15px;
+  max-width: 225px;
+  width: fit-content;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Left .dropdown_Items:after {
+  height: 2px;
+  width: 0;
+  transition: 0.2s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Left .dropdown_Items:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Left #WMTM {
+  margin-bottom: 0;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle {
+  width: 100%;
+  border-left: 1px solid #D3D3D3;
+  margin-left: 15px;
+  line-height: 20px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container {
+  display: flex;
+  flex-direction: row;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .List {
+  display: grid;
+  min-width: 188px;
+  max-width: 225px;
+  row-gap: 20px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .List .dropdown_Items {
+  width: fit-content;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .List .dropdown_Items:after {
+  height: 2px;
+  width: 0;
+  transition: 0.2s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .List .dropdown_Items:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .List .Empty {
+  opacity: 0;
+  cursor: default;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .ArrowLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-weight: 500;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .ArrowLink div {
+  min-width: fit-content;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .ArrowLink:hover {
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Middle .grid_Container .ArrowLink:hover .Arrow {
+  transform: translate3d(6px, 0px, 0px);
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content #COMMUNITY {
+  border: none;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content #COMMUNITY .grid_Container {
+  margin-left: -500px !important;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content #COMMUNITY .grid_Container .List {
+  min-width: 190px;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right {
+  max-width: 338px;
+  padding-right: 32px;
+  margin-left: 30px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right:hover {
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right:hover .Arrow {
+  transform: translate3d(6px, 0px, 0px);
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right img {
+  max-width: 338px;
+  border-radius: 5px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right h2 {
+  margin: 10px 0;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right p {
+  line-height: 25px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Content .dropdownMenu_Content_Right .dropdownMenu_Content_Right_Link {
+  display: flex;
+  flex-direction: row;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.08rem;
+  padding: 20px 0;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Left {
+  border-right: 1px solid #D3D3D3;
+  padding: 20px 75px 20px 150px;
+  font-weight: 500;
+  color: #696969;
+  width: 155px;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Middle {
+  display: flex;
+  flex-direction: row;
+  width: 531px;
+  justify-content: space-between;
+  padding-left: 30px;
+  margin-right: 20px;
+  text-align: center;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Middle div {
+  margin-top: 14px;
+  line-height: 33px;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Middle div:after {
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Middle div:hover::after {
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 300px;
+  margin: 20px 32px 20px 20px;
+  font-weight: 500;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Right:hover {
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Left .dropdownMenu_Footer .dropdownMenu_Footer_Right:hover .Arrow {
+  transform: translate3d(6px, 0px, 0px);
+}
+.Header .NavBarWrap .NavBar .Left .Arrow {
+  height: 18px;
+  width: 18px;
+  margin-left: 12px;
+  position: relative;
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.2s ease-in-out;
+}
+.Header .NavBarWrap .NavBar .Left .ArrowLink div {
+  letter-spacing: 2px;
+}
+.Header .NavBarWrap .NavBar .Right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 360px;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar {
+  background-color: #F5F5F5;
+  height: 50px;
+  width: 264px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1px;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar:hover input::placeholder {
+  color: black;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar .SearchIcon {
+  padding: 16px;
+  width: 16px;
+  height: 16px;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar input[type=text], .Header .NavBarWrap .NavBar .Right .SearchBar textarea {
+  background-color: #F5F5F5;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  max-width: 180px;
+}
+.Header .NavBarWrap .NavBar .Right .SearchBar input[type=text]:focus, .Header .NavBarWrap .NavBar .Right .SearchBar textarea:focus {
+  outline: none;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag {
+  margin-left: 20px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../headerSvgIcons/ShoppingBagIcon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag .Alarm {
+  position: relative;
+  right: -14px;
+  top: -9px;
+  width: 16px;
+  height: 16px;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag .ItemsInCart {
+  padding: 10px;
+  z-index: 101;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag .emptyBag {
+  color: transparent;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag:hover .ShowItemInBag {
+  display: block;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag .ShowItemInBag {
+  display: none;
+  z-index: 100;
+}
+.Header .NavBarWrap .NavBar .Right .ShoppingBag a {
+  position: absolute;
+  padding-top: 6.5px;
+  font-size: 12px;
+  color: rgb(211, 19, 52);
+}
+
+.RD_Header {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .Header {
+    display: none;
+  }
+  .RD_Header {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 14px 18px 14px;
+    background-color: white;
+  }
+  .RD_Header_Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .RD_Header_Navbar_Logo img {
+    width: 24px;
+  }
+  .RD_Header_Navbar_Icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .RD_Header_Navbar_Icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .RD_Header_Navbar_Icons_ShoppingBag {
+    background-image: url(../headerSvgIcons/ShoppingBagIcon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .RD_Header_Navbar_Icons_ShoppingBag_ItemsInCart {
+    font-size: 12px;
+    color: rgb(211, 19, 52);
+    padding-top: 8px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .RD_Header_Navbar_Icons_Menu {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  .RD_Header_SearchBar {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    width: 358px;
+    height: 48px;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 1px solid #A9A9A9;
+  }
+  .RD_Header_SearchBar_Icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+  }
+  .RD_Header_SearchBar input {
+    padding: 14px 0 14px 40px;
+    width: 100%;
+  }
+  .RD_Header_SearchBar input[type=text], .RD_Header_SearchBar textarea {
+    background-color: rgb(250, 250, 250);
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+  }
+  .RD_Header_SearchBar input[type=text]:focus, .RD_Header_SearchBar textarea:focus {
+    outline: none;
+  }
+  .Hamburger {
+    display: none;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    letter-spacing: 1px;
+    font-weight: 420;
+    font-size: 17px;
+    background-color: white;
+    padding-bottom: 300px;
+  }
+  .Hamburger .LOGO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-bottom: 1px solid #D3D3D3;
+  }
+  .Hamburger .LOGO img {
+    cursor: pointer;
+  }
+  .Hamburger .LOGO #LOGO {
+    width: 24px;
+    height: 24px;
+  }
+  .Hamburger .LOGO #Exit {
+    width: 16px;
+    height: 16px;
+  }
+  .Hamburger .NavButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #D3D3D3;
+    cursor: pointer;
+  }
+  .Hamburger .ExtraFeatures {
+    padding: 0 16px;
+    margin-bottom: 10px;
+  }
+  .Hamburger .ExtraFeatures .UpperLine {
+    padding-top: 24px;
+  }
+  .Hamburger .ExtraFeatures .BottomLine {
+    padding: 24px 0;
+  }
+  .Hamburger .Language {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px 16px;
+    margin: 220px 32px 32px 16px;
+    border: 1px solid #D3D3D3;
+    border-radius: 24px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  .Hamburger .Language img {
+    margin-right: 8px;
+  }
+}
+
+/*# sourceMappingURL=Header.css.map */

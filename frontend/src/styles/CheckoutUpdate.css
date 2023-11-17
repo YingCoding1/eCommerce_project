@@ -1,0 +1,229 @@
+.CheckoutUpdate {
+  width: 1000px;
+  height: 600px;
+  background-color: #ffffff;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.CheckoutUpdate_Left {
+  width: 500px;
+  position: relative;
+}
+.CheckoutUpdate_Left_Image {
+  width: 500px;
+  transition: all ease-in-out 1s;
+}
+.CheckoutUpdate_Left_LeftIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CheckoutUpdate_Left_RightIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CheckoutUpdate_Right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.CheckoutUpdate_Right_Close {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+.CheckoutUpdate_Right_ProductName {
+  padding: 40px 40px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.CheckoutUpdate_Right_Price {
+  padding: 0 40px 20px;
+}
+.CheckoutUpdate_Right_ColorName {
+  padding: 0 40px 20px;
+}
+.CheckoutUpdate_Right_ColorSelector {
+  padding: 0 40px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.CheckoutUpdate_Right_ColorSelector_Color {
+  width: 35px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.CheckoutUpdate_Right_ColorSelector_Color:hover {
+  border: 2px solid lightgray;
+}
+.CheckoutUpdate_Right_Size {
+  padding: 0 40px 20px;
+}
+.CheckoutUpdate_Right_SizeSelector {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 40px 20px;
+  gap: 10px;
+}
+.CheckoutUpdate_Right_SizeSelector_Size_Unchecked {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.CheckoutUpdate_Right_SizeSelector_Size_Checked {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 3px;
+  border: 2px solid lightgray;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.CheckoutUpdate_Right_SizeSelector_Size:hover {
+  border: 2px solid black;
+}
+.CheckoutUpdate_Right_UpdateBtn button {
+  background-color: #d31334;
+  width: 420px;
+  margin: auto;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CheckoutUpdate_Right_Detail {
+  padding-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.RD_CheckoutUpdate_Left {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .MuiModal-root {
+    width: 390px;
+  }
+  .MuiBackdrop-root {
+    width: 390px;
+  }
+  .CheckoutUpdate {
+    width: 390px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+  }
+  .CheckoutUpdate_Left {
+    display: none;
+    width: 390px;
+  }
+  .CheckoutUpdate_Left_Image {
+    width: 390px;
+  }
+  .CheckoutUpdate_Left_LeftIcon {
+    display: none;
+  }
+  .CheckoutUpdate_Left_RightIcon {
+    display: none;
+  }
+  .CheckoutUpdate_Right {
+    width: 370px;
+  }
+  .CheckoutUpdate_Right_Close {
+    display: none;
+  }
+  .CheckoutUpdate_Right_ProductName {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .CheckoutUpdate_Right_Price {
+    padding: 0 10px 10px;
+  }
+  .CheckoutUpdate_Right_ColorName {
+    padding: 0 10px 10px;
+  }
+  .CheckoutUpdate_Right_ColorSelector {
+    padding: 0 10px 10px;
+  }
+  .CheckoutUpdate_Right_Size {
+    padding: 0 10px 10px;
+  }
+  .CheckoutUpdate_Right_SizeSelector {
+    padding: 0 10px 10px;
+  }
+  .CheckoutUpdate_Right_UpdateBtn button {
+    margin-top: 10px;
+    width: 340px;
+  }
+  .RD_CheckoutUpdate_Left {
+    display: block;
+    position: relative;
+  }
+  .RD_CheckoutUpdate_Left_Close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 50;
+  }
+  .RD_CheckoutUpdate_Left_Dots {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 5px;
+  }
+  .RD_CheckoutUpdate_Left_Dots_Dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}
+
+/*# sourceMappingURL=CheckoutUpdate.css.map */

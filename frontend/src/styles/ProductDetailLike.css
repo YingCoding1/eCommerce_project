@@ -1,0 +1,32 @@
+.ProductDetailLike h1 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+.ProductDetailLike_Products {
+  letter-spacing: 0.5px;
+  width: 87px;
+}
+.ProductDetailLike_Products img {
+  margin: 16px 0 4px 0;
+}
+.ProductDetailLike_Products img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.ProductDetailLike_Products p {
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  line-height: 1rem;
+  max-height: 2rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 390px) {
+  .ProductDetailLike {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ProductDetailLike.css.map */

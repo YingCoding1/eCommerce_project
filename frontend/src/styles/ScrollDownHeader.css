@@ -1,0 +1,53 @@
+.ScrollDownHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 52px;
+  max-width: 1230px;
+  padding: 0 25px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 100;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ScrollDownHeader_AddToBag {
+  display: flex;
+  flex-direction: row;
+}
+.ScrollDownHeader_AddToBag div {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ScrollDownHeader_AddToBag div p {
+  margin: 12px 0 10px 0;
+}
+.ScrollDownHeader_AddToBag div img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 2px;
+}
+.ScrollDownHeader_AddToBag button {
+  color: white;
+  width: fit-content;
+  height: 36px;
+  padding: 8px 16px;
+  border: 1px solid rgb(211, 19, 52);
+  border-radius: 4px;
+  margin-left: 24px;
+  background-color: rgb(211, 19, 52);
+}
+
+@media only screen and (max-width: 390px) {
+  .ScrollDownHeader {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=ScrollDownHeader.css.map */

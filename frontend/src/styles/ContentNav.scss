@@ -1,0 +1,238 @@
+.ContentNav {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  //margin: auto;
+
+  &_WhatsNew {
+    display: none;
+  }
+
+  &_Banner {
+    position: relative;
+    margin: 0;
+
+    img {
+      width: 900px;
+    }
+
+    h2 {
+      position: absolute;
+      color: #ffffff;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+    }
+
+  }
+
+  &_Heading {
+    background-color: #e0e0e0;
+    cursor: pointer;
+    padding: 10px 5px;
+  }
+
+  &_Menu {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: space-between;
+    align-items: center;
+
+    &_Select {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+      justify-content: center;
+      align-items: center;
+
+      &_Item {
+        font-weight: 600;
+        cursor: pointer;
+        border-bottom: 3px solid red;
+        padding: 20px 0;
+        margin: 0;
+
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      &_Available {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        padding: 20px 0;
+        border-bottom: 3px solid white;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          border-bottom: 3px solid red;
+        }
+
+        p {
+          margin: 0 5px 0 0;
+          padding: 0;
+        }
+      }
+    }
+
+    &_Sort {
+      padding-right: 10px;
+      width: 300px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+
+      &_Btn {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+
+        p {
+          font-weight: 600;
+          margin-right: 10px;
+
+          span {
+            font-weight: lighter;
+            margin-left: 10px;
+          }
+        }
+
+        &_Arrow {
+          margin-right: 20px;
+        }
+      }
+
+      &_Dropdown {
+        position: relative;
+        display: block;
+        z-index: 2;
+
+        ul {
+          position: absolute;
+          display: inline-block;
+          list-style: none;
+          text-align: center;
+          background-color: #ffffff;
+          left: 0;
+          padding: 0;
+          margin: 0;
+
+          li {
+            padding: 10px;
+            margin: 0;
+            width: 280px;
+
+            &:hover {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_SortFilter {
+    display: none;
+  }
+
+  &_Filters {
+    display: flex;
+    flex-direction: row;
+
+    &_Box {
+      margin: 0 5px;
+      button {
+        background: #ffffff;
+        margin: 20px 10px 5px 0;
+        padding: 10px;
+        border-radius: 5px;
+        border: thin solid #000000
+      }
+    }
+
+
+  }
+}
+
+.ContentNav_Banner_Women {
+  left: 5%;
+}
+
+.ContentNav_Banner_Men {
+  right: 5%;
+}
+
+
+@media only screen and (max-width: 390px) {
+  .ContentNav {
+    width: 370px;
+    margin: auto;
+  }
+  .ContentNav_WhatsNew {
+    display: block;
+  }
+
+  .ContentNav_Banner {
+    display: none;
+  }
+
+  .ContentNav_Menu_Sort {
+    display: none;
+  }
+
+  .ContentNav_Menu {
+    display: block;
+    position: relative;
+  }
+  .ContentNav_Menu_Select {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+
+  }
+
+  .ContentNav_SortFilter {
+    margin: 20px 5px;
+    display: block;
+    position: relative;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 1px solid #696969;
+      border-radius: 3px;
+
+      &:hover {
+        background: #202020;
+        color: #D3D3D3;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .ContentNav_Heading {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .ContentNav_Menu_Select_Available, .ContentNav_Menu_Select_Item {
+    text-align: center;
+  }
+
+}

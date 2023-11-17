@@ -1,0 +1,226 @@
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin CursorHover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+@mixin ItemTitle {
+  line-height: 42px;
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+}
+@mixin ItemPattern {
+  @include FlexColumn;
+  background-color: $backgroundColor;
+  text-align: left;
+  padding: 16px 25px 25px 30px;
+  margin-bottom: 8px;
+}
+@mixin NoMarginParagraph {
+  &_Text {
+    margin: 0;
+  }
+}
+@mixin UnderlinePart {
+  content: "";
+  background-color: $luluRed;
+  display: block;
+}
+@mixin FullUnderline {
+  &:after {
+    height: 1.5px;
+    width: 0;
+    transition: .3s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 1.5px;
+    width: 100%;
+    @include UnderlinePart;
+  }
+}
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+}
+$backgroundColor: white;
+$luluRed: rgba(211, 19, 52);
+
+.OrderConfirmation {
+  @include FlexColumn;
+  margin-bottom: 30px;
+  &_Title {
+    @include FlexCenter;
+    line-height: 48px;
+    font-size: 36px;
+    padding: 30px 0;
+    font-weight: 600;
+    background-color: rgb(250, 250, 250);
+  }
+  &_Content {
+    @include FlexRow;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+    &_OrderDetails {
+      @include FlexColumn;
+      width: 672px;
+      padding-right: 50px;
+      &_Review {
+        @include ItemPattern;
+        &_Title {
+          @include ItemTitle;
+        }
+        &_Text {
+          line-height: 24px;
+          font-size: 17px;
+          margin: 0;
+        }
+      }
+      &_Email {
+        @include ItemPattern;
+        &_Title {
+          @include ItemTitle;
+        }
+        @include NoMarginParagraph;
+      }
+      &_Address {
+        @include ItemPattern;
+        &_Title {
+          @include ItemTitle;
+        }
+        &_Text {
+          padding-bottom: 5px;
+        }
+        @include NoMarginParagraph;
+      }
+      &_ConfirmOrder {
+
+        width: 672px;
+        &_Button {
+          @include FlexCenter;
+          padding: 16px;
+          margin: 10px 0 20px auto;
+          background-color: $luluRed;
+          border: 1px solid $luluRed;
+          border-radius: 4px;
+          color: white;
+          width: 301px;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 1.2px;
+          &:hover {
+            cursor: pointer;
+            background-color: rgb(184, 28, 41);
+          }
+        }
+      }
+    }
+  }
+  .CustomerInfo {
+    @include FlexRow;
+    justify-content: space-between;
+    padding: 12px 0 8px 0;
+    .EditButton {
+      @include CursorHover;
+      height: 24px;
+      border-bottom: 1px solid lightgray;
+      &:hover {
+        border-bottom: 1px solid $luluRed;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .OrderConfirmation {
+    @include FlexColumn;
+    margin-bottom: 30px;
+    &_Title {
+      @include FlexCenter;
+      line-height: 36px;
+      font-size: 28px;
+      padding: 30px 0;
+      font-weight: 600;
+      background-color: rgb(250, 250, 250);
+    }
+    &_Content {
+      @include FlexColumn;
+      justify-content: center;
+      background-color: rgb(250, 250, 250);
+      &_OrderDetails {
+        @include FlexColumn;
+        width: 390px;
+        padding: 0;
+        &_Review {
+          @include ItemPattern;
+          &_Title {
+            @include ItemTitle;
+          }
+          &_Text {
+            line-height: 24px;
+            font-size: 17px;
+            margin: 0;
+          }
+        }
+        &_Email {
+          @include ItemPattern;
+          &_Title {
+            @include ItemTitle;
+          }
+          @include NoMarginParagraph;
+        }
+        &_Address {
+          @include ItemPattern;
+          &_Title {
+            @include ItemTitle;
+          }
+          &_Text {
+            padding-bottom: 5px;
+          }
+          @include NoMarginParagraph;
+        }
+        &_ConfirmOrder {
+          width: 390px;
+          &_Button {
+            @include FlexCenter;
+            padding: 16px;
+            margin: 10px auto;
+            //background-color: $luluRed;
+            //border: 1px solid $luluRed;
+            //border-radius: 4px;
+            //color: white;
+            //width: 301px;
+            //font-size: 16px;
+            //font-weight: 600;
+            //letter-spacing: 1.2px;
+            //&:hover {
+            //  cursor: pointer;
+            //  background-color: rgb(184, 28, 41);
+            //}
+          }
+        }
+      }
+    }
+    //.CustomerInfo {
+    //  @include FlexRow;
+    //  justify-content: space-between;
+    //  padding: 12px 0 8px 0;
+    //  .EditButton {
+    //    @include CursorHover;
+    //    height: 24px;
+    //    border-bottom: 1px solid lightgray;
+    //    &:hover {
+    //      border-bottom: 1px solid $luluRed;
+    //    }
+    //  }
+    //}
+  }
+}

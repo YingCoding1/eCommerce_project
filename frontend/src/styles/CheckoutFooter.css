@@ -1,0 +1,67 @@
+.CheckoutFooter {
+  margin: 0;
+  background-color: white;
+}
+.CheckoutFooter_Contact {
+  width: 1322px;
+  padding: 24px 25px 12px 25px;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgray;
+  font-weight: 700;
+  color: rgb(77, 77, 77);
+}
+.CheckoutFooter_Contact_Item {
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: fit-content;
+  line-height: 20px;
+}
+.CheckoutFooter_Contact_Item:after {
+  height: 2px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFooter_Contact_Item:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFooter_Lists {
+  width: 1322px;
+  padding: 24px 25px 12px 25px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: rgb(87, 88, 91);
+}
+.CheckoutFooter_Lists_Item {
+  margin-bottom: 16px;
+  cursor: pointer;
+  width: fit-content;
+  line-height: 20px;
+}
+.CheckoutFooter_Lists_Item:after {
+  height: 2px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFooter_Lists_Item:hover::after {
+  height: 2px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFooter_Lists_Text {
+  margin-bottom: 12px;
+  line-height: 20px;
+}
+
+/*# sourceMappingURL=CheckoutFooter.css.map */

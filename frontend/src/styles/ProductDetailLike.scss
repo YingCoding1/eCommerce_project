@@ -1,0 +1,42 @@
+@mixin PointerEffect {
+  cursor: pointer;
+}
+
+.ProductDetailLike {
+
+  h1 {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  &_Products {
+    letter-spacing: 0.5px;
+    width: 87px;
+
+    img {
+      margin: 16px 0 4px 0;
+
+      &:hover {
+        opacity: 0.8;
+        @include PointerEffect;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      overflow: hidden;
+      line-height: 1rem;
+      max-height: 2rem;
+      margin: 0;
+      @include PointerEffect;
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .ProductDetailLike {
+    display: none;
+  }
+
+}

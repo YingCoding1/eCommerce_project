@@ -1,0 +1,86 @@
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 250px;
+  width: 900px;
+
+  &_Loading{
+    font-size: 900px;
+    margin-top: 150px;
+  }
+
+  &_ListCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &_ViewMore {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 70px 0;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding: 10px 0;
+
+    &_DisplayNum {
+      margin-top: 20px ;
+
+      &_Loading {
+        width: 120px;
+      }
+    }
+
+    &_Content {
+      margin-bottom: 20px;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &_AddBtn {
+        text-transform: uppercase;
+        font-weight: 600;
+        background-color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      &_AddIcon {
+        color: red;
+      }
+    }
+  }
+}
+
+// responsive layout
+
+@media only screen and (max-width: 390px) {
+
+  .ProductList {
+    margin: 0;
+    padding: 0;
+    justify-content: normal;
+    width: 390px;
+    &_ListCards {
+      justify-content: space-between;
+      margin: 20px 0 240px
+    }
+
+    &_ViewMore {
+      margin-bottom: 140px;
+    }
+  }
+}

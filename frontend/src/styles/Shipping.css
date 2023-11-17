@@ -1,0 +1,225 @@
+.Shipping_body {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: auto;
+}
+.Shipping_body_left {
+  width: 60%;
+}
+.Shipping_body_left_contact {
+  background: #fafafa;
+  margin: 5px;
+  padding: 8px;
+}
+.Shipping_body_left_contact h2 {
+  font-size: 30px;
+}
+.Shipping_body_left_contact h4 {
+  font-size: 18px;
+  font-weight: 200;
+}
+.Shipping_body_left_contact_email {
+  height: 25px;
+  width: 100%;
+}
+.Shipping_body_left_address {
+  background: #fafafa;
+  padding: 8px;
+  margin: 5px;
+  align-items: center;
+}
+.Shipping_body_left_address h2 {
+  font-size: 30px;
+}
+.Shipping_body_left_address h4 {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+}
+.Shipping_body_left_address input {
+  align-self: center;
+  height: 25px;
+}
+.Shipping_body_left_address select {
+  height: 25px;
+}
+.Shipping_body_left_address_name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.Shipping_body_left_address_tel {
+  width: 100%;
+}
+.Shipping_body_left_address_add {
+  width: 100%;
+}
+.Shipping_body_left_address_citypp {
+  display: flex;
+  flex-direction: column;
+}
+.Shipping_body_left_address_citypp_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Shipping_body_left_address_citypp_head h4 {
+  display: inline-block;
+  width: 180px;
+}
+.Shipping_body_left_address_citypp_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Shipping_body_left_address_citypp_body input {
+  margin: 5px;
+}
+.Shipping_body_left_address_citypp_body select {
+  height: 30px;
+}
+.Shipping_body_left_option {
+  background: #fafafa;
+  margin: 5px;
+  padding: 8px;
+}
+.Shipping_body_left_option h2 {
+  font-size: 30px;
+}
+.Shipping_body_left_submit {
+  margin-left: auto;
+  text-align: right;
+}
+.Shipping_body_left_submit button {
+  float: right;
+  text-align: right;
+  background: #d31334;
+  width: 180.4px;
+  height: 53px;
+  padding: 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .Shipping_body {
+    flex-direction: column;
+    width: 390px;
+  }
+  .Shipping_body_left {
+    width: 100%;
+  }
+  .Shipping_body_left_contact {
+    background: #fafafa;
+    margin: 5px;
+    padding: 8px;
+  }
+  .Shipping_body_left_contact h2 {
+    font-size: 30px;
+  }
+  .Shipping_body_left_contact h4 {
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .Shipping_body_left_contact_email {
+    height: 25px;
+    width: 100%;
+  }
+  .Shipping_body_left_address {
+    background: #fafafa;
+    padding: 8px;
+    margin: 5px;
+    align-items: center;
+  }
+  .Shipping_body_left_address h2 {
+    font-size: 30px;
+  }
+  .Shipping_body_left_address h4 {
+    font-size: 18px;
+    font-weight: 200;
+    text-align: left;
+  }
+  .Shipping_body_left_address input {
+    align-self: center;
+    height: 25px;
+  }
+  .Shipping_body_left_address select {
+    height: 25px;
+  }
+  .Shipping_body_left_address_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .Shipping_body_left_address_name input {
+    width: 100%;
+  }
+  .Shipping_body_left_address_tel {
+    width: 100%;
+  }
+  .Shipping_body_left_address_add {
+    width: 100%;
+  }
+  .Shipping_body_left_address_citypp {
+    display: flex;
+    flex-direction: row;
+  }
+  .Shipping_body_left_address_citypp_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Shipping_body_left_address_citypp_head h4 {
+    display: inline-block;
+    width: 180px;
+  }
+  .Shipping_body_left_address_citypp_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Shipping_body_left_address_citypp_body input {
+    width: 100%;
+    height: 25px;
+  }
+  .Shipping_body_left_address_citypp_body select {
+    margin-left: 10px;
+    height: 30px;
+    width: 100%;
+  }
+  .Shipping_body_left_option {
+    background: #fafafa;
+    margin: 5px;
+    padding: 8px;
+  }
+  .Shipping_body_left_option h2 {
+    font-size: 30px;
+  }
+  .Shipping_body_left_submit {
+    margin-left: auto;
+    text-align: right;
+  }
+  .Shipping_body_left_submit button {
+    float: right;
+    text-align: right;
+    background: #d31334;
+    width: 180.4px;
+    height: 53px;
+    padding: 16px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .Shipping_body .CheckoutFooter {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Shipping.css.map */

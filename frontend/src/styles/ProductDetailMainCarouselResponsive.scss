@@ -1,0 +1,136 @@
+.ProductDetail_MainCarousel_Responsive {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  &_LeftArrowStyles {
+    position: absolute;
+    top: 50%;
+    //transform: translate(0,-50%);
+    left: 32px;
+    font-size: 45px;
+    color: #ffffff;
+    z-Index: 1;
+    cursor: pointer;
+  }
+
+  &_RightArrowStyles {
+    position: absolute;
+    top: 50%;
+    //transform: translate(0,-50%);
+    right: 32px;
+    font-size: 45px;
+    color: #ffffff;
+    z-Index: 1;
+    cursor: pointer;
+  }
+
+  &_SlideStyles {
+    width: 390px;
+    height: auto;
+    border-Radius: 10px;
+    background-Position: center;
+    background-Size: cover;
+
+    &_Imgs {
+      width: 385px;
+      height: 456px;
+    }
+  }
+
+  &_DotsContainerStyles {
+    display: flex;
+    justify-Content: center;
+    //transform: translate(-50%,-50%);
+    //margin: auto;
+    &_DotStyles {
+      display: flex;
+      margin: 0 3px;
+      cursor: pointer;
+      font-size: 8px;
+      opacity: 0.5;
+      //width: 8px;
+      //height: 8px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      &:Hover {
+        opacity: 1;
+      }
+    }
+  }
+  &_ProductInforContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 10px;
+    margin: 0px auto;
+    width: 360px;
+    &_ProductName{
+      font-size: 1.325rem;
+      font-weight: 700;
+      line-height: 2rem;
+      margin-bottom: 0px;
+      margin-top: 2px;
+
+    }
+    &_ProductPrice{
+      display: block;
+      font-size: .7875rem;
+      font-weight: 300;
+      margin-bottom: 0px;
+      margin-top: 3px;
+
+    }
+    &_AfterPayContainer{
+      &_AfterPay{
+        font-size: .875rem;
+        font-weight: 400;
+        //font-weight: lighter;
+        line-height: 1.4285714286;
+        margin-bottom: 0px;
+        margin-top: 2px;
+        img{
+          height: 0.75rem;
+          width: 3.90625rem;
+          vertical-align: middle;
+          margin: 0 0.3125rem;
+        }
+      }
+    }
+
+  }
+
+}
+
+.ProductDetail_MainCarousel_Responsive_ModelInfo {
+  display: flex;
+  flex-wrap: wrap;
+  position: center;
+  justify-content: center;
+  font-size: 0.6625rem;
+  line-height: 1.17647;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 391px) {
+  .ProductDetail_MainCarousel_Responsive {
+    display: none;
+  }
+}
+
+//.swiper-pagination{
+//  text-align: center!important;
+//  width: 590px !important;
+//  transform: translate(-10%,-10%)!important;
+//}
+.swiper-slide {
+  transform: translateY(-33px) !important;
+}
+
+:root {
+  --swiper-theme-color: black !important;
+}

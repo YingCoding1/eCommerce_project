@@ -1,0 +1,111 @@
+.billing_body {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  margin: auto;
+}
+.billing_body_left {
+  width: 60%;
+}
+.billing_body_left h2 {
+  font-size: 30px;
+}
+.billing_body_left button {
+  float: right;
+  text-align: right;
+  background: #d31334;
+  width: 180.4px;
+  height: 53px;
+  padding: 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.billing_body_left_address {
+  background-color: #fafafa;
+  padding: 10px;
+  margin-top: 10px;
+}
+.billing_body_left_address h4 {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+}
+.billing_body_left_address input {
+  height: 25px;
+}
+.billing_body_left_address select {
+  height: 35px;
+}
+.billing_body_left_address_name {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.billing_body_left_address_phone input {
+  width: 100%;
+}
+.billing_body_left_address_street input {
+  width: 100%;
+}
+.billing_body_left_address_map {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.billing_body_left_address_map_city, .billing_body_left_address_map_province, .billing_body_left_address_map_postcode {
+  display: flex;
+  flex-direction: column;
+}
+.billing_body_left_submit {
+  margin-left: auto;
+  text-align: right;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 390px) {
+  .billing_body {
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+  }
+  .billing_body_left {
+    width: 100%;
+    margin: 10px;
+  }
+  .billing_body_left h2 {
+    text-align: center;
+  }
+  .billing_body_left button {
+    margin-top: 20px;
+  }
+  .billing_body_left h4 {
+    height: 10px;
+  }
+  .billing_body_left_address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .billing_body_left_address_name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .billing_body_left_address_map {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .CheckoutFooter {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Billing.css.map */

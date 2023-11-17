@@ -1,0 +1,327 @@
+.orderHistory {
+  margin: 10px auto;
+  width: 1200px;
+
+  &_MyOrder {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 40px;
+  }
+
+  &_DetailMainContent {
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: inherit;
+  }
+
+  &_MainContent {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: inherit;
+
+    &_ProductHistory {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      margin-left: 200px;
+      gap: 20px;
+    }
+
+    &_OrderDetail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 5px;
+      margin: 20px;
+      background: lightgray;
+      width: 1060px;
+      height: 100px;
+      flex-wrap: wrap;
+      font-family: Calibre, Verlag, Helvetica, sans-serif;
+      margin-left: 80px;
+    }
+
+    &_ProductDetail {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 30px;
+      margin: 40px;
+      margin-left: 80px;
+
+      &_Products {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        &_Top {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          margin-top: -10px;
+
+          &_Images {
+            width: 90px;
+            height: 100px;
+          }
+        }
+
+        &_NameDetail {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+
+        &_Quantity {
+          display: flex;
+          align-items: center;
+        }
+
+        &_Price {
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &_Total {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+
+        &_ItemTotal {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 1000px;
+        }
+
+        &_Shipping {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 1000px;
+        }
+
+        &_Taxes {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 1000px;
+        }
+
+        &_TotalPrice {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 1000px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+.btnContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  //margin-left: 100px;
+}
+
+.invoiceBtn {
+  width: 200px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  border: black solid 1px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: Calibre, Verlag, Helvetica, sans-serif;;
+}
+
+.orderHistory_Icon {
+  display: flex;
+  justify-content: center;
+  margin-left: 110px;
+  width: 1200px;
+}
+
+.hr1 {
+  width: 1050px;
+  color: black;
+  margin-left: -10px;
+}
+
+.Free {
+  color: red;
+}
+
+@media only screen and (max-width: 390px) {
+  .orderHistory {
+    width: 380px;
+    margin: 0;
+
+    &_Icon {
+      width: 350px;
+      margin: 30px;
+    }
+
+    &_MyOrder {
+      width: 350px;
+      margin: 20px;
+    }
+
+    &_MainContent {
+      width: 370px;
+      margin-left: 3px;
+
+      &_OrderDetail {
+        width: 360px;
+        //margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 150px;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        margin-top: 10px;
+
+        &_OrderNumber {
+          margin-left: 10px;
+        }
+
+        &_OrderDate {
+          margin-left: 10px;
+        }
+
+        &_Status {
+          margin-left: 10px;
+        }
+      }
+
+      &_ProductHistory {
+        width: 350px;
+        //margin: 0;
+        margin: 30px;
+      }
+
+      &_ProductDetail {
+        width: 375px;
+        margin: 30px 0 30px 6px;
+
+        &_Products {
+          &_Top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            //margin-top: -10px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            width: 370px;
+
+            &_Images {
+              width: 100px;
+              height: 120px;
+            }
+          }
+
+          &_NameDetail {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 112px;
+            font-size: 12px;
+            font-weight: 500;
+            width: 100px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+          }
+
+          &_Quantity {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            height: 112px;
+          }
+
+          &_Price {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 500;
+            height: 112px;
+          }
+        }
+
+        &_Total {
+          width: 370px;
+
+          &_ItemTotal {
+            width: 340px;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &_Shipping {
+            width: 340px;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &_Taxes {
+            width: 340px;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &_TotalPrice {
+            margin-left: 10px;
+            width: 340px;
+            font-size: 14px;
+            font-weight: bolder;
+          }
+
+          &_OrderNumber {
+            margin-left: 10px;
+            width: 340px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    &_DetailMainContent {
+      width: 370px;
+      margin: 20px 0 20px 6px;
+    }
+  }
+  .btnContainer {
+    width: 370px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .hr1 {
+    width: 345px;
+    margin: 10px;
+  }
+}

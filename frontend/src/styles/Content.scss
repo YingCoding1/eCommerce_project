@@ -1,0 +1,13 @@
+
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin: 124px 0;
+}
+
+@media only screen and (max-width: 390px) {
+  .Content {
+    margin-top: 0;
+  }
+}

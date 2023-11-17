@@ -1,0 +1,120 @@
+.Product {
+  width: auto;
+  height: auto;
+  margin-top: 30px;
+  //margin: 10px 10px 10px 0;
+
+  &_Container {
+    background-color: darksalmon;
+    width: 285px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      background-color: darkgoldenrod;
+      width: 285px;
+      padding-top: 374.078/311.75;
+      position: absolute;
+      left: 0;
+      transition: opacity 150ms ease-in-out;
+      opacity: 0;
+    }
+  }
+}
+
+.Product_details_swatchLength{
+  display: none;
+}
+.Product.show {
+  img {
+    transition: all ease-in-out 0.3s;
+    opacity: 1;
+  }
+
+  img.hide {
+    opacity: 0;
+    z-index: 1;
+  }
+
+  img.hover {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+.Product_details_title {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 280px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 15px 0;
+  //transform: translate(0px, 0px);
+  &_name{
+    padding-right: 30px;
+  }
+}
+
+
+.Product_details {
+  width: 280px !important;
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+
+}
+
+
+// responsive layout
+
+@media only screen and (max-width: 390px) {
+
+  .Product {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 180px;
+    padding: 6px;
+
+    &_Container {
+      height: 215px ;
+      img {
+        width: 180px;
+      }
+
+      &_details {
+        width: 140px;
+
+        &_swatchLength{
+          display: flex;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width:390px) {
+  .Product_details {
+    transform: translate(-20%,0%) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column;
+    align-items: flex-start !important;
+
+    &_swatchLength{
+      font-size: 12px;
+      display: flex;
+    }
+  }
+}
+.Product_details:nth-child(-n+4){
+  display: block;
+}

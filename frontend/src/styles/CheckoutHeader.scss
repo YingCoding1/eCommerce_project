@@ -1,0 +1,34 @@
+@mixin CursorHover {
+  &:hover {
+    cursor: pointer;
+  }
+}
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+}
+$backgroundColor: white;
+
+.CheckoutHeader {
+  background-color: $backgroundColor;
+  padding: 16px 0;
+  @include FlexCenter;
+  &_Logo
+  {
+    padding: 2px;
+    @include CursorHover
+  }
+}
+
+@media only screen and (max-width: 390px){
+  .CheckoutHeader {
+    background-color: $backgroundColor;
+    padding: 16px 0;
+    @include FlexCenter;
+    &_Logo
+    {
+      padding: 2px;
+      @include CursorHover
+    }
+  }
+}

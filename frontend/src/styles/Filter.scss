@@ -1,0 +1,15 @@
+
+.Filter {
+  margin-top: 124px;
+}
+
+
+
+// responsive layout
+@media only screen and (max-width: 390px) {
+
+  .Filter {
+    display: none;
+  }
+}
+

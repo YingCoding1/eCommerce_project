@@ -1,0 +1,107 @@
+.checkoutMyBag_Container {
+  background: #fafafa;
+}
+.checkoutMyBag_Container_MyBags {
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.OrderSummary_Btn_Responsive_Red_Responsive {
+  display: none;
+}
+
+.OrderSummary_ShipTo_Responsive_ShipLocation {
+  display: none;
+}
+.OrderSummary_ShipTo_Responsive_ShipLocation_Red_Responsive {
+  display: none;
+}
+
+.checkoutMyBag_Container_MyBagsResponsive {
+  display: none;
+}
+
+.checkoutMyBag_Container_TotalPrice {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .checkoutMyBag_Container_SummaryTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 360px;
+  }
+  .checkoutMyBag_Container_MyBags {
+    display: none;
+  }
+  .checkoutMyBag_Container {
+    width: 390px;
+  }
+  .checkoutMyBag_Container_TotalPrice {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: Calibre, Verlag, Helvetica, sans-serif;
+    display: block;
+  }
+  .checkoutMyBag_Container_MyBagsResponsive {
+    font-size: 24px;
+    font-weight: bolder;
+    width: 320px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .OrderSummary {
+    width: 390px;
+    margin: 0;
+  }
+  .OrderSummary_Btn_Responsive_Red_Responsive {
+    background: #d31334;
+    width: 350px;
+    height: 53px;
+    padding: 16px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .OrderSummary_ShipTo_Responsive_ShipLocation {
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    border: lightgray solid 1px;
+    width: 350px;
+    height: 52px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: flex-start;
+  }
+  .OrderSummary_ShipTo_Responsive_ShipLocation_Icon {
+    width: 10px;
+    height: 10px;
+  }
+  .OrderSummary_ShipTo_Responsive h1 {
+    font-size: 12px;
+    border-bottom: black solid 1px;
+    transform: translate(41px, -23px);
+    font-weight: 400;
+  }
+  .OrderSummary_ShipTo_Responsive_ArriveTime {
+    transform: translate(-86px, -6px);
+  }
+}
+
+/*# sourceMappingURL=CheckoutMyBag.css.map */

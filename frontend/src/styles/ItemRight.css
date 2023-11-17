@@ -1,0 +1,712 @@
+.ItemRight {
+  width: 420px;
+  padding-left: 36px;
+  margin-right: 28px;
+}
+.ItemRight h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 20px 0 0 0;
+}
+.ItemRight h2 {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 20.8px;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.ItemRight h3 {
+  font-weight: 200;
+  font-size: 0.875rem;
+  margin: 0;
+}
+.ItemRight h4 {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+.ItemRight .afterpay {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0 8px 0;
+}
+.ItemRight .afterpay img {
+  padding: 0;
+  width: 66.4px;
+  height: 12.75px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+.ItemRight .Colour {
+  margin-bottom: 8px;
+}
+.ItemRight .showColor {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -5px;
+}
+.ItemRight .showColor button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 18px;
+  margin: 20px 5px;
+}
+.ItemRight .showColor .btnChecked {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 6px;
+  border-style: solid;
+  outline: 5px black;
+  overflow: hidden;
+  color: black;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 0px 2px #000;
+  background-repeat: repeat;
+}
+.ItemRight .showColor .btnChecked img {
+  width: 100%;
+  height: 100%;
+}
+.ItemRight .showColor .btnNotChecked {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 6px;
+  border-style: solid;
+  outline: 5px black;
+  overflow: hidden;
+  color: #D3D3D3;
+  border-width: 2px;
+  background-repeat: repeat;
+}
+.ItemRight .showColor .btnNotChecked img {
+  width: 100%;
+  height: 100%;
+}
+.ItemRight .showColor .btnNotChecked:hover {
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 0px 2px grey;
+  background-repeat: repeat;
+}
+.ItemRight .SizeText {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ItemRight .SizeText .SizeGuide {
+  padding-bottom: 2px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.ItemRight .showSize {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ItemRight .showSize .showSizeButton {
+  margin-top: 5px;
+  margin-right: 8px;
+}
+.ItemRight .showSize .btnChecked {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 0 5px;
+  line-height: 32px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+.ItemRight .showSize .btnNotChecked {
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 0 5px;
+  line-height: 32px;
+  border: 2px solid #D3D3D3;
+}
+.ItemRight .showSize .btnNotChecked:hover {
+  border-color: black;
+}
+.ItemRight .WhatsMySize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.ItemRight .WhatsMySize div {
+  text-align: center;
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(211, 19, 52);
+  border-radius: 2px;
+  cursor: default;
+}
+.ItemRight .WhatsMySize h4 {
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: 1px black underline;
+  padding-left: 6px;
+  cursor: pointer;
+}
+.ItemRight .ShipBlock {
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  width: 423px;
+}
+.ItemRight .ShipBlock .ShipIt {
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  width: 100%;
+  height: 53.5px;
+  cursor: pointer;
+}
+.ItemRight .ShipBlock .ShipIt h1 {
+  font-size: 22px;
+  font-weight: 900;
+  margin: 2px 0 10px 26px;
+  width: fit-content;
+  height: 24px;
+}
+.ItemRight .ShipBlock .ShipIt h5 {
+  color: #57585b;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0px 0 0 24px;
+  padding-bottom: 8px;
+}
+.ItemRight .ShipBlock .PickUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 12px 10px;
+  height: 28px;
+  cursor: pointer;
+}
+.ItemRight .ShipBlock .PickUp img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.ItemRight .ShipBlock .PickUp p {
+  width: 308px;
+  height: 28px;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+.ItemRight .ShipBlock .buttonDiv {
+  height: 69.2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ItemRight .ShipBlock .buttonDiv button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 19.2px;
+  background: #d31334;
+  color: white;
+  font-size: 16px;
+  border-radius: 3px;
+  border: 1px solid rgb(211, 19, 52);
+  letter-spacing: 0.075rem;
+  cursor: pointer;
+  padding: 24px 16px;
+  margin: 8px;
+}
+.ItemRight .ShipBlock .buttonDiv button:hover {
+  background: red;
+}
+.ItemRight .heartAndstar {
+  margin: 15px 10px 24px 10px;
+  width: 405px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ItemRight .heartAndstar .heart {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.ItemRight .heartAndstar .heart:hover .text {
+  border-bottom: 1px solid rgb(211, 19, 52);
+}
+.ItemRight .heartAndstar img {
+  width: 24px;
+  height: 24px;
+}
+.ItemRight .heartAndstar .text {
+  margin: 3px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid lightgray;
+}
+.ItemRight .star {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.ItemRight .star:hover .text {
+  border-bottom: 1px solid rgb(211, 19, 52);
+}
+.ItemRight .star img {
+  width: 24px;
+  height: 24px;
+}
+.ItemRight .star .text {
+  margin: 3px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid lightgray;
+}
+
+.details {
+  width: 425px;
+}
+.details h2 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin-bottom: 5px;
+}
+.details .details_row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.details .details_row:hover div {
+  border-bottom: 1px solid rgb(211, 19, 52);
+}
+.details .details_row img {
+  margin: 5px;
+  width: 25.5px;
+  height: 25.5px;
+}
+.details .details_row div {
+  margin: 5px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  border-bottom: 1px solid lightgray;
+}
+
+.Ques {
+  width: 377px;
+  height: 48px;
+  padding: 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8E8E8;
+  margin-top: 20px;
+}
+.Ques .Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 340px;
+  padding-right: 8px;
+  letter-spacing: 0.2px;
+}
+.Ques .Text h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.Ques .Text h3 {
+  line-height: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+.Ques .img {
+  display: flex;
+  align-items: center;
+}
+.Ques:hover {
+  cursor: pointer;
+}
+.Ques:hover img {
+  transition: all 0.3s;
+  transform: translate3d(6px, 0px, 0px);
+}
+
+.RD_ItemRight {
+  display: none;
+}
+
+.ItemRight_WarningMessage {
+  display: flex;
+  flex-direction: row;
+  background-color: #fae8ea;
+  border: 1px solid #d22030;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 390px) {
+  .ItemRight {
+    display: none;
+  }
+  .RD_ItemRight {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    padding: 0 10px;
+  }
+  .RD_ItemRight h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    width: 370px;
+    margin: 0;
+  }
+  .RD_ItemRight h3 {
+    font-weight: 200;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+  .RD_ItemRight .RD_Price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: fit-content;
+  }
+  .RD_ItemRight .RD_Price h2 {
+    font-weight: 300;
+    font-size: 1.1875rem;
+    margin-bottom: 0;
+    line-height: 22.5px;
+    margin-right: 2px;
+  }
+  .RD_ItemRight .RD_Price p {
+    font-size: 12px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  .RD_ItemRight .RD_afterpay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0 8px 0;
+  }
+  .RD_ItemRight .RD_afterpay img {
+    padding: 0;
+    width: 66.4px;
+    height: 12.75px;
+    margin: 0 5px;
+    vertical-align: middle;
+  }
+  .RD_ItemRight .RD_ColorDetails {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: flex-end;
+    height: 21.5px;
+    margin-bottom: 8px;
+  }
+  .RD_ItemRight .RD_ColorDetails h4 {
+    font-weight: 600;
+    margin: 0 8px 0 0;
+  }
+  .RD_ItemRight .RD_ColorDetails p {
+    margin: 0 130px 0 0;
+  }
+  .RD_ItemRight .RD_ColorDetails h5 {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 400;
+  }
+  .RD_ItemRight .RD_showColor {
+    width: 370px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .RD_ItemRight .RD_showColor button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin: 20px 5px;
+  }
+  .RD_ItemRight .RD_showColor .btnChecked {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 6px;
+    border-style: solid;
+    outline: 5px black;
+    overflow: hidden;
+    color: black;
+    border-width: 3px;
+    background-repeat: repeat;
+  }
+  .RD_ItemRight .RD_showColor .btnChecked img {
+    width: 100%;
+    height: 100%;
+  }
+  .RD_ItemRight .RD_showColor .btnNotChecked {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 6px;
+    border-style: solid;
+    outline: 5px black;
+    overflow: hidden;
+    color: #D3D3D3;
+    border-width: 2px;
+    background-repeat: repeat;
+  }
+  .RD_ItemRight .RD_showColor .btnNotChecked img {
+    width: 100%;
+    height: 100%;
+  }
+  .RD_ItemRight_WarningMessage {
+    display: flex;
+    flex-direction: row;
+    background-color: #fae8ea;
+    border: 1px solid #d22030;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+    width: 330px;
+  }
+  .RD_ItemRight .RD_SizeDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: flex-end;
+    height: 21.5px;
+    margin-bottom: 8px;
+  }
+  .RD_ItemRight .RD_SizeDetail h4 {
+    font-weight: 600;
+    width: fit-content;
+    margin: 0;
+  }
+  .RD_ItemRight .RD_SizeDetail .SizeGuide {
+    margin: 0;
+    border-bottom: 1px solid lightgray;
+  }
+  .RD_ItemRight .RD_showSize {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .RD_ItemRight .RD_showSize .showSizeButton {
+    margin-top: 5px;
+    margin-right: 8px;
+  }
+  .RD_ItemRight .RD_showSize .btnChecked {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 32px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+  }
+  .RD_ItemRight .RD_showSize .btnNotChecked {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 0 5px;
+    line-height: 32px;
+    border: 2px solid #D3D3D3;
+  }
+  .RD_ItemRight .RD_showSize .btnNotChecked:hover {
+    border-color: black;
+  }
+  .RD_ItemRight .WhatsMySize {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .RD_ItemRight .WhatsMySize div {
+    text-align: center;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(211, 19, 52);
+    border-radius: 2px;
+  }
+  .RD_ItemRight .WhatsMySize h4 {
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: 1px black underline;
+    padding-left: 6px;
+  }
+  .RD_ItemRight .RD_ShipBlock {
+    border: 1px solid lightgray;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_ShipIt {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 10px;
+    width: 348px;
+    height: 53.5px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_ShipIt h1 {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 2px 0 8px 26px;
+    width: fit-content;
+    height: 24px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_ShipIt h5 {
+    color: #57585b;
+    font-weight: 400;
+    font-size: 17px;
+    margin: 0 0 0 24px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_PickUp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 12px 10px;
+    height: 28px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_PickUp img {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_PickUp h4 {
+    width: 308px;
+    height: 28px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_buttonDiv {
+    height: 69.2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_buttonDiv button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 19.2px;
+    background: #d31334;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid rgb(211, 19, 52);
+    letter-spacing: 0.075rem;
+    cursor: pointer;
+    padding: 24px 16px;
+    margin: 8px;
+  }
+  .RD_ItemRight .RD_ShipBlock .RD_buttonDiv button:hover {
+    background: red;
+  }
+  .RD_ItemRight .RD_heartAndstar {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .RD_ItemRight .RD_heartAndstar img {
+    width: 24px;
+    height: 24px;
+  }
+  .RD_ItemRight .RD_heartAndstar .RD_heart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RD_ItemRight .RD_heartAndstar .RD_heart div {
+    margin-top: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+  }
+  .RD_ItemRight .RD_heartAndstar .RD_star {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .RD_ItemRight .RD_heartAndstar .RD_star div {
+    margin-top: 8px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid lightgray;
+  }
+  .RD_ItemRight .RD_Ques {
+    width: 322px;
+    height: 68px;
+    padding: 24px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #E8E8E8;
+    margin-top: 20px;
+  }
+  .RD_ItemRight .RD_Ques .Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 252px;
+    padding-right: 8px;
+    letter-spacing: 0.2px;
+  }
+  .RD_ItemRight .RD_Ques .Text h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .RD_ItemRight .RD_Ques .Text h3 {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+  }
+  .RD_ItemRight .RD_Ques .img {
+    display: flex;
+    align-items: center;
+  }
+  .RD_ItemRight .RD_Ques:hover {
+    cursor: pointer;
+  }
+  .RD_ItemRight .RD_Ques:hover img {
+    transition: all 0.3s;
+    transform: translate3d(6px, 0px, 0px);
+  }
+}
+
+/*# sourceMappingURL=ItemRight.css.map */

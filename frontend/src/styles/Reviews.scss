@@ -1,0 +1,632 @@
+.Reviews {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &_Heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+
+    &_Title {
+      font-size: 50px;
+      font-weight: 600;
+      width: 320px
+    }
+
+    &_StatusBar {
+      display: flex;
+      justify-content: start;
+
+      p {
+        display: inline-block;
+        border-bottom: 1px gray solid;
+        cursor: pointer;
+      }
+
+      p:hover {
+        border-bottom: 1px red solid;
+      }
+    }
+
+    &_ReviewBtn {
+      position: absolute;
+      right: 0;
+
+      button {
+        background-color: black;
+        padding: 20px 100px;
+        color: #ffffff;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &_ReviewBox {
+    display: flex;
+    margin: 100px auto;
+
+    &_Form {
+      display: flex;
+      flex-direction: row;
+      height: 600px;
+      margin: auto;
+
+      &_Image {
+        width: 500px;
+        height: 600px;
+        margin: 0;
+      }
+
+      &_Section {
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 20px;
+        background: #ffffff;
+
+        &_Close {
+          position: absolute;
+          right: 2%;
+          top: 1%;
+          cursor: pointer;
+        }
+
+        &_RDHeading {
+          display: none;
+        }
+
+        &_Heading {
+          margin: 10px 20px;
+
+          &_Title {
+            font-weight: 600;
+            font-size: 30px;
+          }
+
+          &_Name {
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+
+        &_ProgressBar {
+          display: flex;
+          flex-direction: row;
+          gap: 30px;
+          border-bottom: 2px gray solid;
+          margin: 0 20px;
+
+          &_Stepper {
+            margin: -2px;
+            padding: 5px 0;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          //&_Stepper.active {
+          //  border-bottom: 2px red solid;
+          //  font-weight: 600;
+          //}
+        }
+
+        &_Rating {
+          margin: 0 20px;
+        }
+
+        &_Title {
+          display: flex;
+          flex-direction: column;
+          margin: 0 20px;
+
+          input {
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+          }
+        }
+
+        &_Content {
+          margin: 0 20px;
+          display: flex;
+          flex-direction: column;
+        }
+
+        &_Guideline {
+          margin: 0 20px;
+        }
+
+        &_ReviewBtn {
+          margin: 0 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          width: 460px;
+
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            color: #ffffff;
+            border-radius: 5px;
+          }
+        }
+
+        &_Photo {
+          display: flex;
+          flex-direction: column;
+
+          &_Content {
+            height: 250px;
+            padding: 0 28px 16px 28px;
+            border-bottom: 2px solid lightgray;
+            font-size: 16px;
+
+            &_Add {
+              font-weight: 600;
+              margin-bottom: 8px;
+              height: 24px;
+
+              &_Optional {
+                color: rgb(87, 88, 91);
+                font-weight: 400;
+              }
+            }
+
+            &_Upload {
+              margin-bottom: 4px;
+              height: 20px;
+              color: rgb(87, 88, 91);
+            }
+
+            &_CustomerPhoto {
+              margin-top: 16px;
+              padding-top: 12px;
+              display: flex;
+              flex-direction: row;
+              justify-content: center;
+
+              .CustomerPhoto {
+                border-radius: 4px;
+                width: 111px;
+                height: 111px;
+                margin: 2px 8px;
+              }
+            }
+          }
+
+          &_Button {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            padding: 0 28px;
+
+            &_Upload {
+              border: 1px dashed rgb(87, 88, 91);
+              color: rgb(87, 88, 91);
+              padding-top: 15px;
+              padding-bottom: 15px;
+              text-align: center;
+              width: 100%;
+              border-radius: 4px;
+
+              &:hover {
+                cursor: pointer;
+                background-color: rgb(224, 224, 224);
+              }
+            }
+
+            &_Submit {
+              font-weight: 600;
+              color: white;
+              margin-top: 16px;
+              margin-bottom: 8px;
+              letter-spacing: .6px;
+              background-color: black;
+              border: 1px solid black;
+              padding-top: 15px;
+              padding-bottom: 15px;
+              text-align: center;
+              width: 100%;
+              border-radius: 4px;
+
+              &:hover {
+                cursor: pointer;
+                background-color: rgb(87, 88, 91);
+              }
+            }
+
+            &_Edit {
+              font-size: 14px;
+              line-height: 20px;
+              border-bottom: 1px solid rgb(213, 213, 213);
+              width: fit-content;
+              margin: auto;
+              text-align: center;
+
+              &:hover {
+                cursor: pointer;
+                border-bottom: 1px solid rgb(211, 19, 52);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_Section {
+    display: flex;
+    flex-direction: row;
+
+    &_NavBar {
+      width: 280px;
+      margin-right: 30px;
+
+      &_Filter {
+        font-weight: 600;
+        margin-top: 20px;
+      }
+
+      &_Search {
+        position: relative;
+        margin-top: 20px;
+
+        input {
+          height: 30px;
+          padding: 10px 40px;
+          width: 200px;
+        }
+
+        &_Icon {
+          position: absolute;
+          left: 5%;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &_FilterAndSort {
+        display: none;
+      }
+
+      &_Rating {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        background: #ffffff;
+        padding: 10px;
+
+        &_Heading {
+        }
+
+        hr {
+          width: 240px;
+          margin-left: -2px;
+        }
+      }
+    }
+
+    &_Content {
+      display: flex;
+      flex-direction: column;
+      width: 860px;
+
+      &_Card {
+        display: flex;
+        flex-direction: column;
+        background: #ffffff;
+        margin: 10px;
+        width: 860px;
+        height: 300px;
+        justify-content: space-around;
+        padding: 10px;
+
+        &_UserAndTime {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          &_Avatar {
+            margin: 0 10px;
+          }
+
+          &_Name {
+            margin: 0 10px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &_Date {
+            margin: 0 10px;
+          }
+        }
+
+        &_Rating {
+          &_Star {
+            width: 15px;
+            fill: #000000;
+          }
+        }
+
+        &_Title {
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        &_Body {
+          word-wrap: break-word;
+          min-height: 100px;
+        }
+
+        &_ReviewImage {
+          width: 100px;
+          margin: 0;
+          padding: 0;
+        }
+
+        &_Footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+
+          &_Icon {
+            margin: 0 10px;
+          }
+
+          &_Comment {
+            margin: 0 10px;
+          }
+        }
+      }
+      &_LoadMore {
+        //width: 200px;
+        &_Btn {
+          width: 200px;
+          background-color: #ffffff;
+          border: 1px solid #000000;
+          padding: 20px 10px;
+          border-radius: 5px;
+          &:hover {
+            background-color: #000000;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .MuiModal-root {
+    overflow: hidden !important;
+  }
+  .Reviews {
+    margin: 30px auto;
+    width: 360px;
+
+    &_Heading {
+      flex-direction: column;
+
+      &_Title {
+        font-size: 30px;
+      }
+
+      &_StatusBar {
+        p {
+          font-size: 10px;
+        }
+      }
+
+      &_ReviewBtn {
+        position: relative;
+        margin: 50px auto 0;
+        width: 360px;
+      }
+    }
+
+    &_Section {
+      flex-direction: column;
+
+      &_NavBar {
+        &_Filter {
+          display: none;
+        }
+
+        &_Rating {
+          display: none;
+        }
+
+        &_Search {
+          width: 360px;
+          margin: 30px 0 10px;
+
+          input {
+            width: 274px;
+          }
+        }
+
+        &_FilterAndSort {
+          display: flex;
+          flex-direction: row;
+          width: 360px;
+          justify-content: space-between;
+          position: relative;
+
+          &_Filter {
+            width: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 5px;
+
+            button {
+              background: #ffffff;
+              width: 170px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+
+          &_Sort {
+            width: 170px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 5px;
+
+            button {
+              background: #ffffff;
+              width: 170px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      &_Content {
+        width: 360px;
+        margin: 0;
+
+        &_Card {
+          width: 340px;
+          margin: 30px 0;
+
+          &_UserAndTime {
+            &_Avatar {
+              margin: 0 5px;
+            }
+
+            &_Name {
+              margin: 0 5px;
+              font-size: 10px;
+              font-weight: 600;
+            }
+
+            &_Date {
+              margin: 0 5px;
+              font-size: 10px;
+            }
+          }
+
+          &_Footer {
+            &_Icon {
+              margin: 0 5px;
+              font-size: 10px;
+            }
+
+            &_Comment {
+              margin: 0 5px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    &_ReviewBox {
+      width: 390px;
+      background: #ffffff;
+      overflow: hidden;
+      height: 100%;
+      margin: 0;
+      overflow-y: hidden;
+
+      &_Form {
+        width: 390px;
+        background: #ffffff;
+        height: 844px;
+
+        &_Image {
+          display: none;
+        }
+
+        &_Section {
+          width: 390px;
+
+          &_Close {
+            top: 2%;
+            right: 2%;
+          }
+
+          &_RDHeading {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            margin: auto;
+
+            &_Title {
+              font-size: 25px;
+              font-weight: 600;
+              margin-top: 30px;
+            }
+
+            &_Content {
+              display: flex;
+              flex-direction: row;
+              margin-top: 20px;
+              justify-content: center;
+              align-items: center;
+
+              img {
+                max-width: 200px;
+                width: auto;
+              }
+
+              &_Name {
+                font-size: 15px;
+                font-weight: 600;
+                margin-left: 10px;
+              }
+            }
+          }
+
+          &_Heading {
+            display: none;
+          }
+
+          &_ProgressBar {
+            width: 350px;
+            font-size: 15px;
+
+            &_Stepper {
+              width: 360px;
+            }
+          }
+
+          &_Content {
+            &_Textarea {
+              width: 345px !important;
+            }
+          }
+
+          &_ReviewBtn {
+            button {
+              width: 350px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

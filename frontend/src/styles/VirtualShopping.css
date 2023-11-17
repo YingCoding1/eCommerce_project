@@ -1,0 +1,96 @@
+.VirtualShopping {
+  margin: auto;
+  width: 1300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.VirtualShopping img {
+  z-index: -1;
+  height: 400px;
+  position: absolute;
+  filter: brightness(50%);
+  padding-bottom: 20px;
+}
+.VirtualShopping_ImgLeft {
+  left: 0;
+  object-fit: cover;
+  width: 700px;
+}
+.VirtualShopping_ImgRight {
+  right: 0;
+  object-fit: cover;
+  width: 600px;
+}
+.VirtualShopping_MainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  height: 300px;
+  margin: auto;
+  text-align: center;
+}
+.VirtualShopping_MainContent h2 {
+  margin-top: 5px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+.VirtualShopping_MainContent_Text {
+  color: #202020;
+  height: 80px;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+.VirtualShopping_MainContent button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 150px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 0.6px solid black;
+  padding: 20px 0;
+  font-size: 0.8rem;
+  color: black;
+  background-color: white;
+}
+.VirtualShopping_MainContent button:hover {
+  transition: 0.3s all ease-in-out;
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 390px) {
+  .VirtualShopping {
+    width: 390px;
+    flex-direction: column;
+    height: 500px;
+  }
+  .VirtualShopping img {
+    width: 390px;
+  }
+  .VirtualShopping_MainContent {
+    width: 370px;
+    height: 330px;
+    margin: auto;
+    padding: 0;
+  }
+  .VirtualShopping_MainContent h2 {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .VirtualShopping_MainContent_Text {
+    color: #202020;
+    line-height: 25px;
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=VirtualShopping.css.map */

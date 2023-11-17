@@ -1,0 +1,277 @@
+$Underline-Color: rgb(211, 19, 52);
+@mixin UnderlinePart {
+  content: "";
+  background-color: $Underline-Color;
+  display: block;
+}
+
+@mixin FullUnderline {
+  &:after {
+    height: 3px;
+    width: 0;
+    transition: .3s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 3px;
+    width: 100%;
+    @include UnderlinePart;
+  }
+}
+
+.Checkout {
+  display: flex;
+  flex-direction: column;
+  margin: -1px;
+  height: 100%;
+
+  &_Header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #ffffff;
+
+    &_Text {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border-bottom: 1px solid lightgray;
+      width: 1424px;
+      margin: 0 auto;
+
+      &_Link {
+        margin-left: 3px;
+        text-decoration: underline 1px solid black;
+        cursor: pointer;
+      }
+
+      &_Close {
+        position: relative;
+        right: -450px;
+        font-size: 20px;
+      }
+    }
+
+    &_Logo {
+      padding: 20px 0;
+    }
+  }
+
+  &_MainSection {
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    align-items: center;
+
+    &_WithoutProduct {
+      position: relative;
+      height: 370.33px;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+
+      &_Info {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 57px;
+        font-weight: bold;
+        margin: 0 0 22px;
+      }
+
+      &_Link {
+        text-decoration: none;
+
+        &_Button {
+          background: #d31334;
+          width: 180.4px;
+          height: 53px;
+          padding: 16px;
+          color: #FFFFFF;
+          border-radius: 4px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &_WithProduct {
+      display: flex;
+      flex-direction: column;
+
+      &_Body {
+        display: flex;
+        flex-direction: row;
+      }
+
+      &_Save {
+        margin: 60px 0;
+        h2 {
+          font-size: 25px;
+          font-weight: 600;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+
+          span {
+            margin: 0;
+            padding: 0;
+            text-decoration: underline;
+            font-weight: 600;
+            background-color: #fafafa;
+          }
+        }
+      }
+    }
+  }
+
+  &_Footer {
+    margin: 0;
+    background-color: #ffffff;
+
+    &_Contact {
+      width: 1322px;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 24px 25px 12px 25px;
+      margin: 0 auto;
+      height: 130px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: rgb(77, 77, 77);
+      border-bottom: 1px solid lightgray;
+
+      &_Item {
+        margin-bottom: 12px;
+        cursor: pointer;
+        width: fit-content;
+        @include FullUnderline;
+      }
+    }
+
+    &_Lists {
+      width: 1322px;
+      margin: 0 auto;
+      padding: 24px 25px 12px 25px;
+      font-size: 14px;
+      color: rgb(87, 88, 91);
+
+      &_Item {
+        margin-bottom: 16px;
+        cursor: pointer;
+        width: fit-content;
+        @include FullUnderline;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .Checkout {
+    &_Header {
+      width: 390px;
+
+      &_Text {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+
+        &_Heading {
+          padding: 0 10px;
+          font-size: 14px;
+        }
+
+        &_Link {
+          padding: 0 10px;
+          font-size: 14px;
+        }
+
+        &_Close {
+          position: absolute;
+          right: 3%;
+          font-size: 18px;
+        }
+      }
+    }
+
+    &_Logo {
+      padding: 20px 0;
+    }
+
+    &_MainSection {
+      display: flex;
+      flex-direction: column;
+      width: 390px;
+
+      &_WithoutProduct {
+        &_Info {
+          font-size: 30px;
+          margin: 40px auto;
+        }
+        &Link {
+          margin: 20px auto;
+        }
+      }
+
+      &_WithProduct {
+        display: flex;
+        flex-direction: column;
+
+        &_Body {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+        }
+
+        &_Save {
+          padding: 0 10px 30px;
+        }
+      }
+    }
+
+    &_Footer {
+      height: 380px;
+
+      &_Contact {
+        width: 390px;
+        padding: 0;
+        margin: 20px 0;
+        font-size: 14px;
+        gap: 0;
+        height: 70px;
+        font-weight: 600;
+
+        &_Item {
+          padding: 0 10px;
+        }
+      }
+
+      &_Lists {
+        width: 390px;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+
+        &_Item {
+          padding: 0 10px;
+        }
+
+        &_Text {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .Checkout_Footer_Contact_Item.Chat {
+    display: none;
+  }
+}

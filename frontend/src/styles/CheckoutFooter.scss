@@ -1,0 +1,58 @@
+@mixin UnderlinePart {
+  content: "";
+  background-color: $luluRed;
+  display: block;
+}
+@mixin FullUnderline {
+  &:after {
+    height: 2px;
+    width: 0;
+    transition: .3s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 2px;
+    width: 100%;
+    @include UnderlinePart;
+  }
+}
+$luluRed: rgba(211, 19, 52);
+
+.CheckoutFooter {
+  margin: 0;
+  background-color: white;
+  &_Contact {
+    width: 1322px;
+    padding: 24px 25px 12px 25px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+    &_Item {
+      margin-bottom: 12px;
+      cursor: pointer;
+      width: fit-content;
+      line-height: 20px;
+      @include FullUnderline;
+    }
+  }
+  &_Lists {
+    width: 1322px;
+    padding: 24px 25px 12px 25px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: rgb(87, 88, 91);
+    &_Item {
+      margin-bottom: 16px;
+      cursor: pointer;
+      width: fit-content;
+      line-height: 20px;
+      @include FullUnderline;
+    }
+    &_Text {
+      margin-bottom: 12px;
+      line-height: 20px;
+    }
+  }
+
+}

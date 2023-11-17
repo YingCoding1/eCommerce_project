@@ -1,0 +1,53 @@
+.ProductDetailRecentView {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  max-width: 1200px;
+}
+.ProductDetailRecentView_Heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 30px 0;
+  width: 100%;
+}
+.ProductDetailRecentView_ListProducts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  transition: all 0.2s;
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+}
+.ProductDetailRecentView_ListProducts:active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 390px) {
+  .ProductDetailRecentView {
+    width: 360px;
+    margin: 10px auto 0;
+  }
+  .ProductDetailRecentView_Heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px auto;
+  }
+  .ProductDetailRecentView_ListProducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 360px;
+    gap: 20px;
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=ProductDetailRecentView.css.map */

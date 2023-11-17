@@ -1,0 +1,14 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+}
+.Home_Main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=Home.css.map */

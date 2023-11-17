@@ -1,0 +1,426 @@
+.logInHeaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //border-bottom: 2px solid lightgray;
+  margin-top: 1.875rem;
+
+  @media only screen and (max-width: 850px) {
+    margin-top: 2px;
+  }
+
+  .logInHeader {
+    min-width: 950px;
+    font-width: 800;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  hr {
+    margin: 2.25rem 0;
+    width: 100%;
+    border-bottom: 0.0625rem solid #d5d5d5;
+    display: block;
+
+    @media only screen and (max-width: 850px) {
+      margin: 2px;
+      border-bottom: 0.0625rem solid #d5d5d5;
+    }
+  }
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 950px;
+
+  @media only screen and (max-width: 850px) {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+  }
+
+
+  .perksContainer {
+    width: 400px;
+    padding-right: 10px;
+    border-right: 0.2rem solid #d5d5d5;
+
+
+    &_Title {
+      margin-top: 25px;
+
+      &::after {
+        content: '';
+        width: 1.5rem;
+        height: 0.25rem;
+        display: block;
+        background: red;
+      }
+    }
+
+    &_FirstTitle {
+      margin-top: 0;
+
+      &::after {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        display: block;
+        background: red;
+      }
+    }
+
+
+    .perkCell {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin: 0;
+
+      &_Icon {
+        margin-right: 20px;
+      }
+
+      &_Des {
+        margin: 0;
+      }
+    }
+  }
+
+  .logInSec {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+
+    @media only screen and (max-width: 850px) {
+      width: 95vw;
+    }
+
+
+    &_Title {
+      margin-top: 0;
+
+      &::after {
+        content: '';
+        width: 1.5rem;
+        height: 0.2rem;
+        display: block;
+        background: red;
+
+        @media only screen and (max-width: 850px) {
+          display: none;
+        }
+      }
+    }
+
+    .alert {
+      background-color: #fae8ea;
+      border: 0.0625rem solid #d22030;
+      margin-bottom: 15px;
+      padding: 10px;
+
+      @media only screen and (max-width: 850px) {
+        width: 90vw;
+      }
+
+
+      &_Container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+
+      }
+    }
+
+    .email {
+      margin-top: 20px;
+
+      &_Label {
+        margin: 8px 0;
+      }
+
+      &_InputBox_Container {
+        background-color: #fff;
+        background-position: center right 1rem;
+        background-repeat: no-repeat;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.125rem;
+        padding: 0.875rem 1rem;
+        width: 92%;
+        margin-top: 10px;
+
+        .email_InputBox {
+          display: flex;
+          flex-direction: row;
+
+          input {
+            border: none;
+            width: 350px;
+            height: 18px;
+            outline: none;
+            font-size: 16px;
+          }
+        }
+      }
+
+      &_Msg {
+        color: #d31334;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    }
+
+    .password {
+      margin-top: 20px;
+
+      &_Label {
+      }
+
+      &_InputBox_Container {
+        background-color: #fff;
+        background-position: center right 1rem;
+        background-repeat: no-repeat;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.125rem;
+        padding: 0.875rem 1rem;
+        width: 92%;
+        margin-top: 10px;
+
+        .password_InputBox {
+          display: flex;
+          flex-direction: row;
+
+          input {
+            border: none;
+            width: 350px;
+            height: 18px;
+            outline: none;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &_Msg {
+      color: #d31334;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+
+  .forgetPassword {
+    margin-top: 20px;
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid #57585B;
+      margin-top: 10px;
+      padding-top: 10px;
+      color: black;
+      font-size: 15px;
+    }
+
+    a:hover {
+      border-bottom: 1px solid #d31334;
+    }
+  }
+
+  .signInBtnDis {
+    border-color: #bfbfbf;
+    color: #fff;
+    height: 25px;
+    width: 400px;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 550;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    cursor: not-allowed;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: 850px) {
+      width: 92vw;
+    }
+
+
+    span {
+      background-color: rgba(211, 19, 52, 0.1%);
+      color: #fff;
+      height: 20px;
+      width: 400px;
+      text-align: center;
+      text-decoration: none;
+      font-size: large;
+      font-weight: 550;
+      border: none;
+
+      @media only screen and (max-width: 850px) {
+        width: 92vw;
+      }
+
+    }
+  }
+
+  .signInBtn {
+    background-color: #d31334;
+    color: #fff;
+    height: 25px;
+    width: 400px;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 550;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+
+    @media only screen and (max-width: 850px) {
+      width: 92vw;
+    }
+
+
+    span {
+      background-color: rgba(211, 19, 52, 0.1%);
+      color: #fff;
+      height: 20px;
+      width: 400px;
+      text-align: center;
+      text-decoration: none;
+      font-size: large;
+      font-weight: 550;
+      border: none;
+
+      @media only screen and (max-width: 850px) {
+        width: 92vw;
+      }
+
+    }
+
+    .span:hover {
+      cursor: pointer;
+      background-color: darkred;
+    }
+
+  }
+
+  .signInBtn:hover {
+    cursor: pointer;
+    background-color: darkred;
+  }
+
+  .breakLn {
+    border-bottom: 1px solid #bfbfbf;
+    width: 100%;
+  }
+
+  .signUpBtn {
+    margin-top: 20px;
+
+    @media only screen and (max-width: 850px) {
+      display: none;
+    }
+
+
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid black;
+      padding-top: 10px;
+      color: black;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    a:hover {
+      //border-bottom: 1px solid #d31334;
+    }
+  }
+
+  .signUpBtnResContainer {
+    display: none;
+
+    @media only screen and (max-width: 850px) {
+
+      display: flex;
+      flex-direction: column;
+      justify-items: flex-start;
+      align-items: flex-start;
+    }
+
+    .signUpBtnResHeader {
+      display: block;
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    .signUpBtnRes {
+      border-color: #bfbfbf;
+      color: #fff;
+      height: 25px;
+      width: 92vw;
+      border-radius: 0.25rem;
+      text-align: center;
+      text-decoration: none;
+      font-size: medium;
+      font-weight: 550;
+      padding: 20px;
+      //margin-top: 20px;
+      border: none;
+      background-color: black;
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center;
+      margin-bottom: 50px;
+
+      span {
+        background-color: rgba(211, 19, 52, 0.001);
+        color: #fff;
+        height: 20px;
+        width: 92vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: large;
+        font-weight: 550;
+        border: none;
+      }
+
+    }
+
+    .signUpBtnRes:hover {
+      cursor: pointer;
+      background-color: gray;
+    }
+  }
+}
+
+

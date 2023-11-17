@@ -1,0 +1,554 @@
+.CheckoutMyBagCard {
+  margin: auto;
+  width: 1200px;
+}
+
+.CheckoutMyBagCard_Container {
+  width: 809px;
+  height: 297px;
+  background: #fafafa;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  margin-right: 24px;
+  align-content: flex-start;
+
+  &_ProductImgs {
+    img {
+      width: 199px;
+      height: 238.8px;
+      cursor: pointer;
+      margin-left: 24px;
+    }
+  }
+
+  &_RightProductInformation {
+    display: flex;
+    flex-direction: column;
+    width: 535.33px;
+    height: 240.8px;
+    margin: 0 0 0 24px;
+    cursor: pointer;
+    align-items: flex-start;
+
+    &_ProductName {
+      font-family: Calibre, Verlag, Helvetica, sans-serif;
+      font-size: 24px;
+      color: black;
+      font-weight: inherit;
+      line-height: inherit;
+      text-align: inherit;
+      //margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    &_ColorName {
+      margin: 6px 0 0;
+      padding: 0 44px 0 0;
+      font-family: Calibre, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+      font-size: 19px;
+      cursor: pointer;
+    }
+
+    &_ProductDetail {
+      display: flex;
+      flex-direction: row;
+      margin: 16px 0 0;
+
+      &_Size {
+        width: 415.37px;
+        height: 88.5px;
+        font-size: 1.1875rem;
+
+        &_Edit {
+          margin-top: 20px;
+          padding: 0 0 4px;
+          cursor: pointer;
+          //border-bottom-width: 1px;
+          border-bottom: lightgray solid 1px;
+          width: 35px;
+
+          &:hover {
+            border-bottom: red solid 1px;
+          }
+        }
+      }
+
+      &_RightInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        height: auto;
+        flex-wrap: nowrap;
+        transform: translate(-161px, -25px);
+
+        &_ItemPrice {
+          width: 74.26px;
+          height: 88.5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-end;
+          //margin-right: 10px;
+          &_PriceTag {
+          }
+
+          &_Amount {
+          }
+        }
+
+        &_Quantity {
+          width: 120px;
+          height: 105px;
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px;
+          justify-content: flex-end;
+          align-items: center;
+
+          &_QuantityTag {
+            margin-top: 10px;
+          }
+
+          &_SelectBar {
+            &_Select {
+              width: 70px;
+              height: 40px;
+              border-radius: 4px;
+              position: relative;
+            }
+          }
+        }
+
+        &_TotalAmount {
+          width: 78.7px;
+          height: 80.5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          &_TotalAmountTag {
+          }
+
+          &_TotalPrice {
+          }
+        }
+      }
+    }
+
+    &_BottomInfo {
+      width: 700.33px;
+      height: 26.5px;
+      display: flex;
+      margin-top: 50px;
+      justify-content: space-between;
+
+      &_FreeShipping {
+        width: 340.48px;
+        height: 26.5px;
+        font-size: 19px;
+        font-family: Calibre, Verlag, Helvetica, sans-serif;
+        transform: translate(-12px, -22px);
+      }
+
+      &_RightInfo {
+        display: flex;
+        flex-direction: row;
+        transform: translate(-169px, -15px);
+
+        &_X {
+          display: none;
+        }
+
+        &_SaveForLater {
+          margin-right: 10px;
+          border-bottom: lightgrey solid 1px;
+          font-size: 1.0625rem;
+          line-height: 1.1764705882;
+          -webkit-font-smoothing: antialiased;
+          font-weight: 400;
+          font-family: Calibre, Verlag, Helvetica, sans-serif;
+
+          &:Hover {
+            border-bottom: red solid 1px;
+          }
+        }
+
+        &_RemoveButton {
+          margin-left: 10px;
+          border-bottom: lightgrey solid 1px;
+          font-size: 1.0625rem;
+          line-height: 1.1764705882;
+          -webkit-font-smoothing: antialiased;
+          font-weight: 400;
+          font-family: Calibre, Verlag, Helvetica, sans-serif;
+
+          &:Hover {
+            border-bottom: red solid 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.underLine {
+  background: lightgray;
+  border: none;
+  height: 0.03125rem;
+  margin-left: 32px;
+  //box-sizing: border-box;
+  width: 925px;
+}
+
+.lineBetweenWord {
+  height: 26px;
+  margin-top: 0px;
+}
+
+.Edit_UnderLine {
+  width: 35px;
+  margin-left: 0;
+  cursor: pointer;
+  color: lightgray;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.cusSelect {
+  width: 80px;
+  height: 52px;
+  position: relative;
+  background-color: #fff;
+  margin-top: 10px;
+
+  > div:nth-of-type(1) {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 4px 0 7px;
+
+    > span {
+      font-size: 12px;
+      white-space: nowrap;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+      flex: 1;
+      background-color: #fff;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s;
+    }
+  }
+
+  > div:nth-of-type(2) {
+    width: 100%;
+    max-height: 220px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+    > div {
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      padding: 0 6px;
+      transition: all 0.3s;
+
+      > span {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+      }
+    }
+
+    > div:hover {
+      background-color: #d6d6d6;
+    }
+  }
+
+  > div:nth-of-type(2)::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+  }
+
+  > div:nth-of-type(2)::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 50px;
+  }
+}
+
+.trans {
+  transform: rotate(180deg);
+}
+
+.RemoveButtonForm {
+  width: 430px;
+  height: 230px;
+  background-color: #ffffff;
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+
+
+  &_Close {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  &_Text {
+    font-size: 23px;
+    font-weight: 600;
+    width: 370px;
+    margin: 40px 20px 15px;
+
+  }
+
+  &_Button {
+    background-color: #d22030;
+    color: #ffffff;
+    width: 380px;
+    margin: 15px auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: #921217;
+    }
+
+  }
+  &_Keep {
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline #a9a9a9;
+    text-underline-offset: 5px;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration:  underline #d22030;
+      text-underline-offset: 5px;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 390px) {
+  .OrderSummary {
+    //display: none;
+  }
+  .CheckoutMyBagCard {
+    width: 370px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+
+    &_Container {
+      width: 370px;
+      height: 222px;
+      background: #fafafa;
+      display: flex;
+      flex-direction: row;
+      cursor: pointer;
+      align-items: flex-start;
+      margin-bottom: 32px;
+
+      &_ProductImgs {
+        img {
+          width: 100px;
+          height: 120.08px;
+          margin-left: 10px;
+        }
+      }
+
+      &_RightProductInformation {
+        margin: 0;
+        width: 250px;
+
+        &_ProductName {
+          font-size: 13px;
+          width: 150px;
+          height: 50px;
+          font-weight: bold;
+        }
+
+        &_ColorName {
+          font-size: 13px;
+          width: 153px;
+          height: 20px;
+        }
+
+        &_ProductDetail {
+          display: flex;
+          flex-direction: column;
+          width: 230px;
+
+          &_Size {
+            font-size: 13px;
+            //transform: translate(0px, 16px);
+            width: 230px;
+
+            &_Edit {
+              transform: translate(0px, 22px);
+              border-right: lightgray solid 1px;
+              //ChangebyEason
+              &_EditButton {
+                font-size: 12px;
+                font-weight: lighter;
+                width: 10px;
+                height: 10px;
+                transform: translate(0px, 8px);
+              }
+            }
+          }
+
+          &_RightInfo {
+            width: 230px;
+            height: 240px;
+
+            &_ItemPrice {
+              &_PriceTag {
+                display: none;
+              }
+
+              &_Amount {
+                display: none;
+              }
+            }
+
+            &_Quantity {
+              font-size: 13px;
+              display: flex;
+              flex-direction: row;
+              transform: translate(62px, -157px);
+
+              &_QuantityTag {
+                display: flex;
+                //transform: translate(0px,20px);
+              }
+            }
+
+            &_TotalAmount {
+              &_TotalAmountTag {
+                display: none;
+              }
+
+              &_TotalPrice {
+                transform: translate(189px, -153px);
+              }
+            }
+          }
+        }
+
+        &_BottomInfo {
+          width: 320px;
+          transform: translate(-80px, 10px);
+
+          &_FreeShipping {
+            font-size: 15px;
+            transform: translate(-24px, -282px);
+          }
+
+          &_RightInfo {
+            width: 230px;
+
+            &_SaveForLater {
+              transform: translate(98px, -307px);
+              font-size: 13px;
+              display: flex;
+              width: 82px;
+              align-items: center;
+            }
+
+            &_RemoveButton {
+              display: none;
+            }
+
+            &_X {
+              display: flex;
+              transform: translate(196px, -441px);
+            }
+          }
+        }
+
+        &_BottonInfo {
+          width: 230px;
+        }
+      }
+    }
+  }
+  .cusSelect {
+    width: 20px;
+    height: 1px;
+    background: wheat;
+  }
+  .cusSelect > div:nth-of-type(2) {
+    font-size: 5px;
+    transform: translate(7px, -30px);
+  }
+  .cusSelect > div:nth-of-type(1) img {
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  .cusSelect > div:nth-of-type(1) {
+    width: 30px;
+    height: 15px;
+    transform: translate(5px, -7px);
+    background-color: #e8e8e8;
+  }
+  .cusSelect > div:nth-of-type(1) > span {
+    background-color: #e8e8e8;
+    height: 13px;
+    width: 10px;
+    transform: translate(-4px, -4px);
+  }
+  .cusSelect > div:nth-of-type(2) > div > span {
+    font-size: 10px;
+  }
+  .lineBetweenWord {
+    display: none;
+  }
+  .underLine {
+    display: none;
+  }
+}

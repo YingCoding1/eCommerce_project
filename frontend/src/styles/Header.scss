@@ -1,0 +1,549 @@
+$HTML_White: #FFFFFF;
+$HTML_LightGrey: #D3D3D3;
+$Default_BC: #F5F5F5;
+$InputText_Color: #F8F8F8;
+$Underline-Color: rgb(211, 19, 52);
+$min-width: 1060px;
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin PointerCursor {
+  cursor: pointer;
+}
+@mixin UnderlinePart {
+  content: "";
+  background-color: $Underline-Color;
+  display: block;
+}
+@mixin PartUnderline {
+  &:after {
+    height: 4px;
+    width: 0;
+    transition: .3s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 4px;
+    width: 30px;
+    @include UnderlinePart;
+  }
+}
+@mixin FullUnderline {
+  &:after {
+    height: 3px;
+    width: 0;
+    transition: .3s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 3px;
+    width: 100%;
+    @include UnderlinePart;
+  }
+}
+@mixin ThinnerFullUnderline {
+  &:after {
+    height: 2px;
+    width: 0;
+    transition: .2s ease-in-out;
+    @include UnderlinePart;
+  }
+  &:hover::after {
+    height: 2px;
+    width: 100%;
+    @include UnderlinePart;
+  }
+}
+@mixin RedArrowEffect {
+  &:hover {
+    cursor: pointer;
+    .Arrow {
+      transform: translate3d(6px, 0px, 0px);
+    }
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.Header {
+  @include FlexColumn;
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  justify-content: center;
+  align-self: center;
+  .CeilingWrap {
+    display: flex;
+    justify-content: center;
+    .Ceiling {
+      @include FlexRow;
+      justify-content: flex-end;
+      height: 36px;
+      width: 100%;
+      background-color: $Default_BC;
+      padding: 0 34px;
+      align-items: center;
+      max-width: 1250px;
+      .Item {
+        @include FlexRow;
+        align-items: center;
+        margin-left: 16px;
+        height: 36px;
+        @include PointerCursor;
+        .Icon {
+          padding: 2px 8px 0 8px;
+        }
+        .Button {
+          font-size: 14px;
+          font-style: normal;
+          line-height: 33px;
+          @include FullUnderline;
+          &_Logout {
+            position: absolute;
+            top: 30%;
+            background-color: #f5f5f5;
+            padding: 3px 30px;
+            border-radius: 5px;
+          }
+        }
+        #OrderHistoryIcon {
+          height: 20px;
+        }
+      }
+    }
+  }
+  .NavBarWrap {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    .NavBar {
+      @include FlexRow;
+      justify-content: space-between;
+      width: 1250px;
+      align-items: center;
+      padding: 18px 34px;
+      .Left {
+        @include FlexRow;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 50%;
+        .Logo {
+          margin-right: 36px;
+          @include PointerCursor;
+        }
+        .Button {
+          padding: 4px 12px;
+          margin: 0 auto;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          letter-spacing: 1.2px;
+          line-height: 34px;
+          min-width: fit-content;
+          @include PointerCursor;
+          @include PartUnderline;
+        }
+        .dropdownMenu {
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+          position: absolute;
+          width: 100%;
+          transition: .3s opacity ease-in-out;
+          padding: 35px 0;
+          margin: 0 auto;
+          background-color: white;
+          left: 50%;
+          right: auto;
+          transform: translateX(-50%);
+        }
+        .dropdown:hover > .dropdownMenu {
+          display: flex;
+          z-index: 3;
+        }
+        .dropdownMenu_Content {
+          @include FlexRow;
+          align-items: stretch;
+          padding-bottom: 30px;
+          max-width: 1250px;
+          margin: 0 auto;
+          .dropdownMenu_Content_Left {
+            @include FlexColumn;
+            padding-right: 14px;
+            margin: 10px 0 0 45px;
+            min-width: 145px;
+            max-width: 225px;
+            width: 100%;
+            letter-spacing: .5px;
+            line-height: 25px;
+            .dropdown_Items {
+              margin-bottom: 15px;
+              max-width: 225px;
+              width: fit-content;
+              @include PointerCursor;
+              @include ThinnerFullUnderline;
+            }
+            #WMTM {
+              margin-bottom: 0;
+            }
+          }
+          .dropdownMenu_Content_Middle {
+            width: 100%;
+            border-left: 1px solid $HTML_LightGrey;
+            margin-left: 15px;
+            line-height: 20px;
+            .grid_Container {
+              @include FlexRow;
+              .List {
+                display: grid;
+                min-width: 188px;
+                max-width: 225px;
+                row-gap: 20px;
+                .dropdown_Items {
+                  width: fit-content;
+                  @include PointerCursor;
+                  @include ThinnerFullUnderline;
+                }
+                .Empty {
+                  opacity: 0;
+                  cursor: default;
+                }
+              }
+              .ArrowLink {
+                @include FlexRow;
+                justify-content: flex-start;
+                font-weight: 500;
+                div {
+                  min-width: fit-content;
+                }
+                @include RedArrowEffect;
+              }
+            }
+          }
+          #COMMUNITY {
+            border: none;
+            .grid_Container {
+              margin-left: -500px!important;
+              .List {
+                min-width: 190px;
+                justify-content: flex-start;
+                margin-right: 20px;
+              }
+            }
+          }
+          .dropdownMenu_Content_Right {
+            max-width: 338px;
+            padding-right: 32px;
+            margin-left: 30px;
+            @include RedArrowEffect;
+            img {
+              max-width: 338px;
+              border-radius: 5px;
+            }
+            h2 {
+              margin: 10px 0;
+            }
+            p {
+              line-height: 25px;
+            }
+            .dropdownMenu_Content_Right_Link {
+              @include FlexRow;
+            }
+          }
+        }
+        .dropdownMenu_Footer {
+          @include FlexRow;
+          justify-content: center;
+          width: 100%;
+          margin: 0 auto;
+          background-color: $Default_BC;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: .08rem;
+          padding: 20px 0;
+          .dropdownMenu_Footer_Left {
+            border-right: 1px solid $HTML_LightGrey;
+            padding: 20px 75px 20px 150px;
+            font-weight: 500;
+            color: #696969;
+            width: 155px;
+          }
+          .dropdownMenu_Footer_Middle {
+            @include FlexRow;
+            width: 531px;
+            justify-content: space-between;
+            padding-left: 30px;
+            margin-right: 20px;
+            text-align: center;
+            div {
+              margin-top: 14px;
+              line-height: 33px;
+              @include PointerCursor;
+              @include FullUnderline;
+            }
+          }
+          .dropdownMenu_Footer_Right {
+            @include FlexRow;
+            justify-content: flex-end;
+            width: 300px;
+            margin: 20px 32px 20px 20px;
+            font-weight: 500;
+            @include RedArrowEffect;
+          }
+        }
+        .Arrow {
+          height: 18px;
+          width: 18px;
+          margin-left: 12px;
+          position: relative;
+          transform: translate3d(0px, 0px, 0px);
+          transition: transform .2s ease-in-out;
+        }
+        .ArrowLink {
+          div {
+            letter-spacing: 2px;
+          }
+        }
+      }
+      .Right {
+        @include FlexRow;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 360px;
+        .SearchBar {
+          background-color: $Default_BC;
+          height: 50px;
+          width: 264px;
+          border: 1px solid transparent;
+          @include FlexRow;
+          border-radius: 5px;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 1px;
+          &:hover {
+            cursor: pointer;
+            border: 1px solid black;
+            input::placeholder {
+              color: black;
+            }
+          }
+          .SearchIcon {
+            padding: 16px;
+            width: 16px;
+            height: 16px;
+          }
+          input[type="text"], textarea {
+            background-color: $Default_BC;
+            border: none;
+            @include PointerCursor;
+            font-size: 17px;
+            max-width: 180px;
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        .ShoppingBag {
+          margin-left: 20px;
+          width: 24px;
+          height: 24px;
+          background-image: url(../headerSvgIcons/ShoppingBagIcon.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include PointerCursor;
+          .Alarm {
+            position: relative;
+            right: -14px;
+            top: -9px;
+            width: 16px;
+            height: 16px;
+          }
+          .ItemsInCart {
+            padding: 10px;
+            z-index: 101;
+          }
+          .emptyBag {
+            color: transparent;
+          }
+          &:hover {
+            .ShowItemInBag {
+              display: block;
+            }
+          }
+          .ShowItemInBag {
+            display: none;
+            z-index: 100;
+          }
+          a {
+            position: absolute;
+            padding-top: 6.5px;
+            font-size: 12px;
+            color: rgb(211, 19, 52);
+          }
+        }
+      }
+    }
+  }
+}
+
+.RD_Header {
+  display: none;
+}
+// responsive layout
+@media only screen and (max-width: 390px) {
+  .Header {
+    display: none;
+  }
+  .RD_Header {
+    @include FlexColumn;
+    padding: 14px 14px 18px 14px;
+    background-color: white;
+
+    &_Navbar {
+      @include FlexRow;
+      justify-content: space-between;
+      align-items: center;
+
+      &_Logo {
+        img {
+          width: 24px;
+        }
+      }
+
+      &_Icons {
+        @include FlexRow;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 20px;
+          @include PointerCursor;
+        }
+        &_ShoppingBag {
+          background-image: url(../headerSvgIcons/ShoppingBagIcon.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+          &_ItemsInCart {
+            font-size: 12px;
+            color: rgb(211, 19, 52);
+            padding-top: 8px;
+            text-align: center;
+            font-weight: 600;
+          }
+        }
+        &_Menu {
+          margin-left: 10px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    &_SearchBar {
+      @include FlexRow;
+      position: relative;
+      justify-content: flex-start;
+      align-items: center;
+      width: 358px;
+      height: 48px;
+      margin-top: 25px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      border: 1px solid #A9A9A9;
+      &_Icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 5%;
+      }
+      input {
+        padding: 14px 0 14px 40px;
+        width: 100%;
+      }
+      input[type="text"], textarea {
+        background-color: rgb(250, 250, 250);
+        border-radius: 5px;
+        border: none;
+        font-size: 17px;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+  .Hamburger {
+    display: none; // todo
+    margin: 0;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    letter-spacing: 1px;
+    font-weight: 420;
+    font-size: 17px;
+    background-color: white;
+    padding-bottom: 300px;
+    .LOGO {
+      @include FlexRow;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px;
+      border-bottom: 1px solid #D3D3D3;
+      img {
+        @include PointerCursor;
+      }
+      #LOGO {
+        width: 24px;
+        height: 24px;
+      }
+      #Exit {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .NavButton {
+      @include FlexRow;
+      justify-content: space-between;
+      padding: 16px;
+      border-bottom: 1px solid #D3D3D3;
+      @include PointerCursor;
+    }
+    .ExtraFeatures {
+      padding: 0 16px;
+      margin-bottom: 10px;
+      .UpperLine {
+        padding-top: 24px;
+      }
+      .BottomLine {
+        padding: 24px 0;
+      }
+    }
+    .Language {
+      @include FlexRow;
+      justify-content: flex-start;
+      padding: 10px 16px;
+      margin: 220px 32px 32px 16px;
+      border: 1px solid #D3D3D3;
+      border-radius: 24px;
+      width: fit-content;
+      img {
+        margin-right: 8px;
+      }
+      @include PointerCursor;
+    }
+  }
+}

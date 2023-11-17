@@ -1,0 +1,100 @@
+.OrderSummary {
+  width: 345px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.OrderSummary_Header {
+  font-weight: 600;
+  line-height: 32px;
+  font-size: 28px;
+  text-align: left;
+}
+.OrderSummary_SubHeader {
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+}
+.OrderSummary_SubHeader_ItemNumber {
+  display: flex;
+  flex-direction: row;
+}
+.OrderSummary_SubHeader_ItemNumber_ShoppingBagIcon {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+.OrderSummary_SubHeader_ItemNumber_Text {
+  padding: 0;
+  margin: 0 5px 0 0;
+}
+.OrderSummary_SubHeader_Total {
+  font-weight: 500;
+}
+.OrderSummary_Products {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  padding-top: 16px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.OrderSummary_Products_SingleProduct {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 16px;
+}
+.OrderSummary_Products_SingleProduct_Image {
+  width: 71px;
+  height: 85px;
+  padding-right: 10px;
+}
+.OrderSummary_Products_SingleProduct_Details {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 20px;
+  font-size: 15px;
+  width: 100%;
+}
+.OrderSummary_Products_SingleProduct_Details_ProductName {
+  font-weight: 500;
+}
+.OrderSummary_Products_SingleProduct_Details_QuantityAndTotal {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.OrderSummary_Cost {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  padding-top: 12px;
+}
+.OrderSummary_Cost_Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 20px;
+  font-size: 15px;
+  padding-bottom: 12px;
+}
+.OrderSummary_Cost_Item_Text {
+  margin: 0;
+}
+.OrderSummary_Total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+.OrderSummary_Total_Text {
+  margin: 0;
+}
+
+/*# sourceMappingURL=OrderSummary.css.map */

@@ -1,0 +1,98 @@
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+$borderBottom: 1px solid rgb(213, 213, 213);
+
+.OrderSummary {
+  width: 345px;
+  padding-top: 16px;
+  @include FlexColumn;
+  &_Header {
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 28px;
+    text-align: left;
+  }
+  &_SubHeader {
+    padding: 12px 0;
+    border-bottom: $borderBottom;
+    justify-content: space-between;
+    @include FlexRow;
+    font-size: 17px;
+    &_ItemNumber {
+      @include FlexRow;
+      &_ShoppingBagIcon {
+        height: 24px;
+        width: 24px;
+        margin-right: 5px;
+      }
+      &_Text {
+        padding: 0;
+        margin: 0 5px 0 0;
+      }
+    }
+    &_Total {
+      font-weight: 500;
+    }
+  }
+  &_Products {
+    @include FlexColumn;
+    border-bottom: $borderBottom;
+    padding-top: 16px;
+    overflow: hidden;
+    overflow-y: scroll;
+    &_SingleProduct {
+      @include FlexRow;
+      padding-bottom: 16px;
+      &_Image {
+        width: 71px;
+        height: 85px;
+        padding-right: 10px;
+      }
+      &_Details {
+        @include FlexColumn;
+        text-align: left;
+        line-height: 20px;
+        font-size: 15px;
+        width: 100%;
+        &_ProductName {
+          font-weight: 500;
+        }
+        &_QuantityAndTotal {
+          justify-content: space-between;
+          @include FlexRow;
+        }
+      }
+    }
+  }
+  &_Cost {
+    @include FlexColumn;
+    border-bottom: $borderBottom;
+    padding-top: 12px;
+    &_Item {
+      @include FlexRow;
+      justify-content: space-between;
+      line-height: 20px;
+      font-size: 15px;
+      padding-bottom: 12px;
+      &_Text {
+        margin: 0;
+      }
+    }
+  }
+  &_Total {
+    @include FlexRow;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 12px;
+    &_Text {
+      margin: 0;
+    }
+  }
+}

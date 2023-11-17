@@ -1,0 +1,29 @@
+.CheckoutHeader {
+  background-color: white;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+.CheckoutHeader_Logo {
+  padding: 2px;
+}
+.CheckoutHeader_Logo:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 390px) {
+  .CheckoutHeader {
+    background-color: white;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .CheckoutHeader_Logo {
+    padding: 2px;
+  }
+  .CheckoutHeader_Logo:hover {
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=CheckoutHeader.css.map */

@@ -1,0 +1,248 @@
+.CheckoutFailure {
+  display: flex;
+  flex-direction: column;
+  margin: -1px;
+  height: 100%;
+}
+.CheckoutFailure_Header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #ffffff;
+}
+.CheckoutFailure_Header_Text {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  width: 1424px;
+  margin: 0 auto;
+}
+.CheckoutFailure_Header_Text_Link {
+  margin-left: 3px;
+  text-decoration: underline 1px solid black;
+  cursor: pointer;
+}
+.CheckoutFailure_Header_Text_Close {
+  position: relative;
+  right: -450px;
+  font-size: 20px;
+}
+.CheckoutFailure_Header_Logo {
+  padding: 20px 0;
+}
+.CheckoutFailure_Main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.CheckoutFailure_Main_Content {
+  position: relative;
+  height: 370.33px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+.CheckoutFailure_Main_Content_Info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 57px;
+  font-weight: bold;
+  margin: 0 0 22px;
+}
+.CheckoutFailure_Main_Content_Link {
+  text-decoration: none;
+  padding: 0;
+  height: 60px;
+}
+.CheckoutFailure_Main_Content_Link_Button {
+  background: #d31334;
+  width: 160.4px;
+  padding: 16px 10px;
+  margin: 20px 0;
+  color: #FFFFFF;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
+.CheckoutFailure_Footer {
+  margin: 0;
+  background-color: #ffffff;
+}
+.CheckoutFailure_Footer_Contact {
+  width: 1322px;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 24px 25px 12px 25px;
+  margin: 0 auto;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: rgb(77, 77, 77);
+  border-bottom: 1px solid lightgray;
+}
+.CheckoutFailure_Footer_Contact_Item {
+  margin-bottom: 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+.CheckoutFailure_Footer_Contact_Item:after {
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFailure_Footer_Contact_Item:hover::after {
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFailure_Footer_Lists {
+  width: 1322px;
+  margin: 0 auto;
+  padding: 24px 25px 12px 25px;
+  font-size: 14px;
+  color: rgb(87, 88, 91);
+}
+.CheckoutFailure_Footer_Lists_Item {
+  margin-bottom: 16px;
+  cursor: pointer;
+  width: fit-content;
+}
+.CheckoutFailure_Footer_Lists_Item:after {
+  height: 3px;
+  width: 0;
+  transition: 0.3s ease-in-out;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+.CheckoutFailure_Footer_Lists_Item:hover::after {
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: rgb(211, 19, 52);
+  display: block;
+}
+
+.RD_FailurePage {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .FailurePage {
+    display: none;
+  }
+  .RD_FailurePage {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 844px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    background-color: #ffffff;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    padding-left: 8px;
+    border-bottom: 1px solid lightgray;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Text_Left {
+    display: flex;
+    font-size: 13px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Text_Left_Heading {
+    display: inline;
+    padding: 0;
+    margin: 0;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Text_Left_Link {
+    display: inline;
+    text-decoration: underline 1px solid black;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Text_Close {
+    padding-right: 8px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Header_Logo {
+    margin: 0 auto;
+    padding: 16px 0;
+  }
+  .RD_FailurePage .RD_CheckoutFailure {
+    height: 405.45px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Main {
+    margin-bottom: 158px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Main_Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 64px 0;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Main_Content_Info {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    text-align: center;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Main_Content p {
+    margin: 8px 0 24px 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Main_Content_Link {
+    color: white;
+    height: 19px;
+    width: 336px;
+    padding: 16px;
+    background-color: rgb(211, 19, 52);
+    border: 1px solid rgb(211, 19, 52);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Footer {
+    height: 310.5px;
+    background-color: white;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Footer_Contact {
+    padding: 24px 16px 12px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Footer_Contact_Item {
+    margin-bottom: 12px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Footer_Lists {
+    padding: 24px 16px 24px 16px;
+    color: rgb(87, 88, 91);
+    font-size: 12px;
+  }
+  .RD_FailurePage .RD_CheckoutFailure_Footer_Lists_Item {
+    margin-bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=CheckoutFailure.css.map */

@@ -1,0 +1,194 @@
+@mixin basic-set {
+  h2 {
+    font-size: 20px;
+    margin: 0 auto 1rem;
+    flex-grow: 2;
+    font-family: Calibre, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 540;
+    line-height: 25.5px;
+    cursor: pointer;
+    align-items: center;
+    //width: 40px;
+  }
+  .rowTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+  }
+  .FilterClothes {
+    font-size: 18px;
+    text-align: left;
+    font-family: Calibre, VerlabHelvetica, sans-serif;
+    margin: 0 auto 30px;
+
+    .FilterClothesContent {
+      div {
+        margin: 5px;
+      }
+    }
+
+  }
+  button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 18px;
+    margin: 20px 5px
+  }
+}
+
+.left-bar {
+  float: left;
+  width: 250px;
+  background: #ffffff;
+  margin: 0 30px;
+  padding: 10px;
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+//.content{
+//  margin-left:200px;
+//  background: #F0AD4E;
+//}
+.FilterClothes_0 {
+  @include basic-set
+}
+
+.FilterClothes_1 {
+  @include basic-set
+
+}
+
+.FilterClothes_2 {
+  @include basic-set
+}
+
+.FilterClothes_3 {
+  @include basic-set
+}
+
+.FilterClothes_4 {
+  @include basic-set;
+
+  .btnChecked {
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 6px;
+    padding: 2px 6px;
+    color: black;
+    border-style: solid;
+    border-width: 2px;
+    outline: 5px black;
+  }
+
+  .btnNotChecked {
+    font-weight: 600;
+    border-radius: 3px;
+    margin: 6px;
+    padding: 2px 6px;
+    border-color: #D3D3D3;
+    border-style: solid;
+    border-width: 2px;
+    outline: 5px black;
+  }
+
+  div {
+    div {
+      display: inline-block;
+    }
+  }
+}
+
+.FilterClothes_5 {
+  @include basic-set
+}
+
+.FilterClothes_6 {
+  @include basic-set;
+
+  .FilterClothes {
+    .FilterClothesContent {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      div {
+        //display: inline-block;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        .btnChecked {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin: 6px;
+          color: black;
+          border-style: solid;
+          border-width: 3px;
+          outline: 5px black;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+        }
+
+        .btnNotChecked {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin: 6px;
+
+          color: #D3D3D3;
+          border-style: solid;
+          border-width: 2px;
+          outline: 5px black;
+          overflow: hidden;
+          background-repeat: repeat;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        label {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+
+
+  div {
+    div {
+      display: inline-block;
+    }
+  }
+}
+
+.FilterClothes_7 {
+  @include basic-set
+}
+
+.FilterClothes_8 {
+  @include basic-set
+}
+
+.FilterClothes_9 {
+  @include basic-set
+}
